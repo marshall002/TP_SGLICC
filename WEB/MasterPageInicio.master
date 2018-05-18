@@ -1,0 +1,1045 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPageInicio.master.cs" Inherits="MasterPageInicio" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>MiHogar-Perú</title>
+
+    <link href="plugins/inicio/css2/alice-min-real_estate.1501674834188.min.css" rel="stylesheet" />
+    <%-- departamentos slider    --%>
+    <%--<link rel="stylesheet" type="text/css" href="https://cds.urbania.g3c.pe/atomic/css/fonts.css?201801221005" />--%>
+
+    <link href="plugins/inicio/css2/estilos-inicio.css" rel="stylesheet" />
+   <link type="text/css" href="plugins/inicio/css2/all-modules.css" rel="stylesheet" />
+    <%--ya esta --%>
+    <link type="text/css" href="plugins/inicio/css2/fonts.css" rel="stylesheet" />
+    <link type="text/css" href="plugins/inicio/css2/home.css" rel="stylesheet" />
+
+    <%-- Material design--%>
+    <%--<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,cyrillic-ext" type="text/css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" type="text/css" />--%>
+
+    <link rel="stylesheet" href="./material.min.css">
+    <script src="./material.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <%-- Bootstrap--%>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <script type="text/javascript" src="plugins/inicio/js/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+
+  
+    <link type="text/css" href="plugins/loguin/css/loguin.css" rel="stylesheet" />
+
+    <%--Para Validacion--%>
+    <link href="plugins/panel/validacion_registro/css/bootstrap.min-roger.css" rel="stylesheet" />
+    <%-- Alertas--%>
+    <%--  <script type="text/javascript" src='<%=ResolveUrl("~/plugins/notificaciones/sweetalert.min.js")%>'></script>     
+    <link href="plugins/sweetalert/sweetalert.css" rel="stylesheet" />--%>
+    <script type="text/javascript" src='<%=ResolveUrl("~/plugins/notificaciones/sweetalert2.all.js")%>'></script>  
+
+       <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js" type="text/javascript"></script>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body id="cuerpo">
+    <%-- <form id="form1" runat="server" typeof="post">
+        <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>--%>
+    <%-- <form class="validate-form" runat="server">--%>
+    <form id="form1" runat="server">
+        <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+        <nav class="TopNav" role="navigation">
+            <div class="TopNav-body container">
+
+                <a class="TopNav-logo" style="margin-top:10px;" id="lnkLogo" href="inicio.aspx">
+                    <img src="plugins/inicio/imagenes/mihogar.png" alt="" />
+                   <%-- <span class="TopNav-logo-country">Perú</span>--%>
+                </a>
+
+                <%--<div class="TopNav-actions">
+                    <ul class="TopNav-actions-list js-navActions">
+                        <li class="TopNav-action"><a class="TopNav-action-link" data-toggle="modal" href="#myModal"><i class="material-icons">perm_identity</i>Acceder/Registrarse</a></li>
+                        <li class="TopNav-action TopNav-newListing">
+                            <a class="TopNav-action-link TopNav-newListing-button button" id="lnkCreateListing"
+                                href="/customer/account/login/">
+                                <i class="material-icons">add</i>Ofrece una propiedad </a>
+                        </li>
+                    </ul>
+                    <a class="TopNav-action-link TopNav-mobileNav button icon-hamburger js-mobileNav"><span>Mostrar menú</span></a>
+                </div>--%>
+
+                <nav class="navbar navbar-inverse">
+                    <div class="btn-toolbar" role="toolbar">
+                        <div class="" role="group">
+                            <%--era btn-group--%>
+                            <button type="button" class="btn btn-primary"><i class="material-icons">home</i> Venta</button>
+                            <button type="button" class="btn btn-primary"><i class="material-icons">store</i> Alquiler</button>
+                            <button type="button" class="btn btn-primary"><i class="material-icons">directions_walk</i> Proyectos</button>
+
+                            <asp:Literal ID="Literal1" runat="server"></asp:Literal>
+
+                            <%-- <div class="btn-group" role="group">
+                               
+                                <%--data-toggle="dropdown" y aria-haspopup="true" class="btn btn-primary dropdown-toggle" --%>
+
+
+                            <%--<div class="dropdown-menu" aria-labelledby="about-us">
+                                    <a class="dropdown-item" href="#">Mi Panel</a>
+                                    <a class="dropdown-item" href="#">Mis Mensajes</a>
+                                    <a class="dropdown-item" href="#">Mis Notificaciones</a>
+                                </div>
+                            </div>--%>
+
+                            <a class="TopNav-action-link TopNav-newListing-button button" id="lnkCreateListing"
+                                href="/customer/account/login/">
+                                <i class="material-icons">add</i>Ofrece una propiedad </a>
+
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </nav>
+
+        <div >
+            <!-- The Modal -->
+            <div class="modal fade" id="IniciarSesion">
+                <div class="modal-dialog" style="width:28% !important">
+                    <div class="modal-content">
+
+                        <!-- Modal Header -->
+                        <div class="caja-loguin">
+                            <span class="cabecera-loguin-entrar">MiHogar-Perú
+                            </span>
+
+                            <div class="estilo-caja-input validate-input" data-validate="Por favor ingresa tu correo">
+                                <input class="estilo-contenido-input" type="text" name="txtDni_email" maxlength="40" placeholder="Correo o Dni">
+                                <span class="focus-input100"></span>
+                            </div>
+
+                            <div class="estilo-caja-input validate-input" data-validate="Por favor ingresa tu clave">
+                                <input class="estilo-contenido-input" type="password" name="txtClave" maxlength="40" placeholder="Contraseña">
+                                <span class="focus-input100"></span>
+                            </div>
+
+                            <div class="texto-recordar-contra">
+                                <span class="txt1">Olvidaste tu :
+                                </span>
+
+                                <a href="#" class="txt2">Correo / Contraseña?
+                                </a>
+                            </div>
+
+                            <div class="container-boton-entrar">
+                                <asp:Button ID="Button1" runat="server" CssClass="boton-entrar" Text="Confirmar" OnClick="Entrar_Click" />
+                            </div>
+
+                            <div id="no-tienes-cuenta" class="no-tienes-cuenta">
+                                <span class="txt1 p-b-9">¿ No tienes una cuenta ?
+                                </span>
+
+                                <a href="#" class="txt3" data-dismiss="modal" data-toggle="modal" data-target="#Registrarse" aria-haspopup="true" aria-expanded="false">Registrarme ahora
+                                </a>
+
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+       <div id="Registro" class="col-lg-12 col-md-12 col-sm-12 col-xl-12"> 
+         <div class="modal fade" id="Registrarse">
+                <div class="modal-dialog" style="width:900px !important">
+                    <div class="modal-content">
+                        <!-- Modal Header -->
+                           <div class="caja-header-registro ">
+                            <span class="cabecera-registro">MiHogar-Perú
+                            </span>
+                            </div>
+                            <div class="row-personalizado" style="width:100%;">
+                            <div class="caja-input-registro">
+                                <input id="txtDocumento" name="txtDocumento" class="contenido-input-registro col-lg-12 col-md-12 col-sm-12 col-xl-12" type="text" placeholder="Dni" onkeyup="validacion('txtDocumento');">
+                                <span class="help-block"></span>
+                            </div>
+                            <div class="caja-input-registro">
+                                <input id="txtCorreo" name="txtCorreo" class="contenido-input-registro col-lg-12 col-md-12 col-sm-12 col-xl-12" type="text" placeholder="Correo" onkeyup="validacion('txtCorreo');">
+                                <span class="help-block"></span>
+                            </div>                           
+                            </div>
+
+                            <div class="row-personalizado" style="width:100%;">
+                            <div class="caja-input-registro ">
+                                <input id="txtNombres" name="txtNombres" class="contenido-input-registro col-lg-12 col-md-12 col-sm-12 col-xl-12" type="text" placeholder="Nombres" onkeyup="validacion('txtNombres');">
+                                <span class="help-block"></span>                                
+                            </div>
+                            <div class="caja-input-registro ">                                
+                                <input id="txtApellidos" name="txtApellidos" class="contenido-input-registro col-lg-12 col-md-12 col-sm-12 col-xl-12" type="text"  placeholder="Apellidos" onkeyup="validacion('txtApellidos');">
+                                <span class="help-block"></span>
+                            </div>
+                            </div>
+                            
+                            <div class="row-personalizado" style="width:100%;">
+                            <div class="caja-input-registro">
+                                <input id="txtContra1" name="txtContra1" class="contenido-input-registro col-lg-12 col-md-12 col-sm-12 col-xl-12" type="password"  placeholder="Contraseña" onkeyup="validacion('txtContra1');">
+                                <span class="help-block"></span>
+                            </div>
+                            <div class="caja-input-registro">
+                                <input id="txtContra2" name="txtContra2" class="contenido-input-registro col-lg-12 col-md-12 col-sm-12 col-xl-12" type="password"  placeholder="Confirmar-Contraseña" onkeyup="validacion('txtContra2');">
+                                <span class="help-block"></span>
+                            </div>
+                            </div>
+
+                            <div class="container-boton-registrar">
+                                <asp:UpdatePanel ID="UpdatePanel1" runat="server" UpdateMode="Conditional" ChildrenAsTriggers="true">
+                                    <ContentTemplate>
+                                        <asp:Button ID="btnRegistrar" runat="server" CssClass="boton-registrar" Text="Registrarme" OnClientClick="verificar();" OnClick="btnRegistrar_Click" />
+                                    </ContentTemplate>
+                                    <Triggers>
+                                        <asp:AsyncPostBackTrigger ControlID="btnRegistrar" EventName="Click" />
+                                    </Triggers>
+                                </asp:UpdatePanel>
+
+                            </div>
+
+                            <div class="row-personalizado-buttons col-lg-12 col-md-12 col-sm-12 col-xl-12" >
+                            <div class="volver-registro">
+                                <a href="#" class="txt3" data-dismiss="modal" data-toggle="modal" data-target="#IniciarSesion" aria-haspopup="true" aria-expanded="false">Volver
+                                </a>
+                            </div>
+                             <div class="cerrar-registro">
+                                <button id="cerrar" type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+                            </div>
+                            </div>
+
+                            <div class="espacio-final-registro">
+                                <input id="verificado" style="width: 210px;" name="verificado" type="hidden" class="form-control" />
+                                 <asp:TextBox ID="Correo_existe" runat="server"></asp:TextBox>
+                                 <asp:TextBox ID="Documento_existe" runat="server"></asp:TextBox>
+                                 <asp:TextBox ID="ApagarTimer" runat="server"></asp:TextBox>
+                            </div>
+                    </div>
+                </div>
+            </div>
+         </div>
+
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+
+        <div class="instructions">
+            <div class="container">
+                <section>
+                    <img src="plugins/inicio/imagenes/portal/busquemos.png" alt="" />
+                    <h2>Alquilar y comprar</h2>
+                    <p style="text-align: justify;">En MiHogar-Perú podrás iniciar la búsqueda de la propiedad que mejor se acomode a tus necesidades, gustos e ingresos para, de esta manera, poder darle forma a tus sueños y proyectos. Dentro de nuestro catálogo podrás encontrar todo tipo de inmuebles en alquiler y venta a lo largo y ancho del Perú. Fácilmente hallarás bienes raíces en Lima, Arequipa, Trujillo y muchas más ciudades. Gracias a MiHogar-Perú podrás olvidarte de buscar propiedades en los periódicos o recorrer las calles de distritos con mucha demanda como San Isidro o Miraflores para encontrar el inmueble que deseas. Tan sólo necesitarás tu computadora para realizar la búsqueda y así ahorrarás tiempo, dinero y energía en el proceso.</p>
+                </section>
+
+                <section>
+                    <img src="plugins/inicio/imagenes/portal/encontremos.png" alt="" />
+                    <h2>Encuentra a tu agente</h2>
+                    <p style="text-align: justify;">Formar parte de MiHogar-Perú es totalmente gratis y te llevará menos de un minuto. Con tan solo introducir tu dni , correo , nombres y apellidos y una contraseña, podrás descubrir todas las ventajas y facilidades que te ofrece nuestro portal para estar más cerca de las propiedades con las que sueñas. Una vez que encuentres los inmuebles que cumplan tus expectativas, MiHogar-Perú te proporcionará la información respectiva de cada inmueble asi como la de contacto necesaria, para que te comuniques con el vendedor, ya sea vía mensajería ,email o por teléfono. Cientos de inmobiliarias escogen MiHogar-Perú para anunciar sus propiedades, haciendo de nuestra página una de las más completas y más populares del país. Además, siempre verificamos la calidad de los agentes que encontrarás, por lo que el riesgo de fraude es inexistente.</p>
+                </section>
+
+                <section>
+                    <img src="plugins/inicio/imagenes/portal/altacalidad.png" alt="" />
+                    <h2>Inmuebles de alta calidad</h2>
+                    <p style="text-align: justify;">En MiHogar-Perú se pueden encontrar miles de bienes raíces que van desde departamentos y casas, hasta terrenos. Nuestro portal cuenta con la mejor selección de inmuebles de Lima y provincia ofrecidas por agentes inmobiliarios. Puedes ser un joven que quiere emanciparse alquilando su primer departamento, un pequeño comerciante buscando expandir su negocio con un local comercial, un joven matrimonio que desea formar una familia y mudarse a una casa, o un hombre que desea empezar algún tipo de construcción en un terreno adquirido, MiHogar-Perú es tu aliado inmobiliario online. Para facilitar la búsqueda de tu propiedad ideal, solo necesitas registrarte de forma gratuita, filtrar tu búsqueda y contactar con el propietario o agencia que escojas.</p>
+                </section>
+            </div>
+        </div>
+
+        <%--Esto es para el loguin--%>
+        <script type="text/javascript" src="plugins/loguin/vendor/jquery/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="plugins/loguin/js/main.js"></script>
+
+        
+
+        <script type="text/javascript" src="plugins/inicio/js/jquery.min.js" defer="defer"></script>
+        <script type="text/javascript" src="plugins/inicio/js/yoson.js" defer="defer"></script>
+        <script type="text/javascript" src="plugins/inicio/js/common.js" defer="defer"></script>
+        <script type="text/javascript" src="plugins/inicio/js/home.js" defer="defer"></script>
+        <script type="text/javascript" src="plugins/inicio/js/scheme-home.js" defer="defer"></script>
+        <script type="text/javascript" src="plugins/inicio/js/appload.js" defer="defer"></script>
+        <%-- </form>--%>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+        </asp:ContentPlaceHolder>
+
+
+        <script>  
+
+            var div1;
+            var div2;
+            var div3;
+
+
+            window.onload = function () {
+              
+            }
+
+
+            var v = true;
+            $("span.help-block").hide();
+
+            
+            function RegistroCompleto() {
+                $('<audio id="chatAudio"><source src="notify.ogg" type="audio/ogg"><source src="/pages/audio/exito.mp3" " type="audio/mpeg"><source src="notify.wav" type="audio/wav"></audio>').appendTo('body');
+                $('#chatAudio')[0].play();
+                swal({
+                    title: "Registro Exitoso!",
+                    text: "Se registro exitosamente!",
+                    icon: "success",
+                    button: "Cerrar!",
+
+                }).then(function () {
+                    // Redirect the user
+                    window.location.href = "inicio.aspx";
+                    //console.log('The Ok Button was clicked.');
+                   
+                });
+            }
+
+            function CorreoYaExiste() {
+                swal("Este correo ya existe!", {
+                    button: {
+                        text: "Cerrar!",
+                    },
+                });
+            }
+
+            function DocumentoYaExiste() {
+                swal("Este documento ya existe!", {
+                    button: {
+                        text: "Cerrar!",
+                    },
+                });
+            }
+
+            //function CuentaNoActivada() {
+            //    $('<audio id="chatAudio"><source src="notify.ogg" type="audio/ogg"><source src="/pages/audio/error.mp3" " type="audio/mpeg"><source src="notify.wav" type="audio/wav"></audio>').appendTo('body');
+            //    $('#chatAudio')[0].play();
+            //    swal("Cuenta No Activada , visita tu correo y activa tu cuenta con el link que se te envio , gracias ", {
+            //        icon: "warning",
+            //        button: {
+            //            text: "Cerrar!",
+            //        },
+            //    });
+            //}
+
+            function CuentaNoActivada() {
+                $('<audio id="chatAudio"><source src="notify.ogg" type="audio/ogg"><source src="/pages/audio/error.mp3" " type="audio/mpeg"><source src="notify.wav" type="audio/wav"></audio>').appendTo('body');
+                $('#chatAudio')[0].play();
+            swal({
+                type: 'error',
+                //title: 'Oops...',
+                text: 'Cuenta No Activada , visita tu correo y activa tu cuenta con el link que se te envio , gracias',
+                footer: '<a OnClick="EnviarActivacionCorreo();" >Enviar de nuevo el correo de activación</a>',
+                });
+            }
+            
+            function CuentaAmonestada() {
+                $('<audio id="chatAudio"><source src="notify.ogg" type="audio/ogg"><source src="/pages/audio/error.mp3" " type="audio/mpeg"><source src="notify.wav" type="audio/wav"></audio>').appendTo('body');
+                $('#chatAudio')[0].play();
+                swal({
+                    type: 'error',
+                    //title: 'Oops...',
+                    text: 'Cuenta Amonestada',
+                    footer: '<a OnClick="EnviarActivacionCorreo();" >Enviar de nuevo el correo de activación</a>',
+                });
+            }
+
+            function CuentaSuspendida() {
+                $('<audio id="chatAudio"><source src="notify.ogg" type="audio/ogg"><source src="/pages/audio/error.mp3" " type="audio/mpeg"><source src="notify.wav" type="audio/wav"></audio>').appendTo('body');
+                $('#chatAudio')[0].play();
+                swal({
+                    type: 'error',
+                    //title: 'Oops...',
+                    text: 'Cuenta Suspendida',
+                    footer: '<a OnClick="EnviarActivacionCorreo();" >Enviar de nuevo el correo de activación</a>',
+                });
+            }
+
+            function EnviarActivacionCorreo() {
+                swal({
+                    title: 'Escribe tu correo por favor',
+                    input: 'email',
+                    showCancelButton: true,
+                    confirmButtonText: 'Enviar',
+                    showLoaderOnConfirm: true,
+                    preConfirm: (email) => {
+                        return new Promise((resolve) => {
+                            setTimeout(() => {
+                                if (email === 'taken@example.com') {
+                                    swal.showValidationError(
+                                        'This email is already taken.'
+                                    )
+                                }
+                                resolve()
+                            }, 2000)
+                        })
+                    },
+                    allowOutsideClick: () => !swal.isLoading()
+                }).then((result) => {
+                    if (result.value) {
+                        $('<audio id="chatAudio"><source src="notify.ogg" type="audio/ogg"><source src="/pages/audio/exito.mp3" " type="audio/mpeg"><source src="notify.wav" type="audio/wav"></audio>').appendTo('body');
+                        $('#chatAudio')[0].play();
+                        swal({
+                            type: 'success',
+                            title: 'Se te envio el correo de activación!',
+                            html: 'Enviado a : ' + result.value
+                        })
+                    }
+                })
+            }
+
+            function verificar() {
+
+              var v1 = 0, v2 = 0, v3 = 0, v4 = 0, v5 = 0, v6 = 0;
+
+              v1 = validacion('txtDocumento');
+              v2 = validacion('txtNombres');
+              v3 = validacion('txtApellidos');
+             <%--  v4 = validacion(document.getElementById("<%=ddlDepartamentos.ClientID%>").value);--%>
+             <%-- v5 = validacion(document.getElementById("<%=ddlProvincias.ClientID%>").value);
+             v6 = validacion(document.getElementById("<%=ddlDistritos.ClientID%>").value);--%>
+              //v4 = validacion('ddlDepartamentos');
+              //v5 = validacion('ddlProvincias');
+              //v6 = validacion('ddlDistritos');       
+
+              v4 = validacion('txtCorreo');
+              v5 = validacion('txtContra1');
+              v6 = validacion('txtContra2');
+
+             
+              if (v1 === false || v2 === false || v3 === false || v4 === false || v5 === false || v6 === false) {
+                  $("#exito").hide();
+                  $("#error").show();
+                  $("#enviarcorreo").hide();
+                  document.getElementById('verificado').value = 0;
+              } else {
+                 
+                  document.getElementById('verificado').value = 1;
+                  $("#error").hide();
+                  $("#exito").hide();
+                  $("#enviarcorreo").hide();
+              }
+            }
+
+
+            function validacion(campo) {
+                $('<audio id="chatAudio"><source src="notify.ogg" type="audio/ogg"><source src="/pages/audio/exito.mp3" " type="audio/mpeg"><source src="notify.wav" type="audio/wav"></audio>').appendTo('body');
+                if (campo === 'txtDocumento') {
+                    documento = document.getElementById(campo).value;
+                    $.ajax({
+                        type: "POST",
+                        //url: "inicio.aspx/comprobardocumento",
+                        url: '<%=ResolveUrl("~/pages/seguridad/validar-informacion.aspx/comprobardocumento")%>',
+                        data: '{documento: "' + $("#txtDocumento").val() + '" }',
+                        dataType: 'JSON',
+                        contentType: "application/json; charset=utf-8",
+                        success: function (res) {
+                            if (res.d) {
+                                //alert("si existe");
+                                campo = 'txtDocumento';
+                                $("#glypcn" + campo).remove();
+                                $('#' + campo).parent().css({ "color": "brown" });
+                                $('#' + campo).css({ "border": "2px solid brown" });
+                                $('#' + campo).parent().children('span').text("Este documento ya existe").show();
+                                $('#' + campo).parent().append("<span id='glypcn" + campo + "' class='glyphicon glyphicon-remove form-control-feedback'></span>");
+                                return false;
+                           <%-- $('#<%=Correo_existe.ClientID%>').val('Si existe');--%>
+                        }
+                        else {
+
+                            if (documento == null || documento.length == 0) {
+                                $("#glypcn" + campo).remove();
+                                $('#' + campo).parent().css({ "color": "brown" });
+                                $('#' + campo).css({ "border": "2px solid brown" });
+                                $('#' + campo).parent().children('span').text("Ingrese su documento").show();
+                                $('#' + campo).parent().append("<span id='glypcn" + campo + "' class='glyphicon glyphicon-remove form-control-feedback'></span>");
+                                return false;
+                            }
+                            else if (/(\s)/.test(documento)) {
+                                $("#glypcn" + campo).remove();
+                                $('#' + campo).parent().css({ "color": "brown" });
+                                $('#' + campo).css({ "border": "2px solid brown" });
+                                $('#' + campo).parent().children('span').text("No se permiten espacios en blanco").show();
+                                $('#' + campo).parent().append("<span id='glypcn" + campo + "' class='glyphicon glyphicon-remove form-control-feedback'></span>");
+                                return false;
+                            }
+                            else if (/^[0-9]{9,}$/.test(documento)) {
+                                $("#glypcn" + campo).remove();
+                                $('#' + campo).parent().css({ "color": "brown" });
+                                $('#' + campo).css({ "border": "2px solid brown" });
+                                $('#' + campo).parent().children('span').text("El máximo de digitos permitos son 8").show();
+                                $('#' + campo).parent().append("<span id='glypcn" + campo + "' class='glyphicon glyphicon-remove form-control-feedback'></span>");
+                                return false;
+                            }
+                            else if (/^[0-9]{0,7}$/.test(documento)) {
+                                $("#glypcn" + campo).remove();
+                                $('#' + campo).parent().css({ "color": "brown" });
+                                $('#' + campo).css({ "border": "2px solid brown" });
+                                $('#' + campo).parent().children('span').text("Ingrese mas dígitos , necesarios 8").show();
+                                $('#' + campo).parent().append("<span id='glypcn" + campo + "' class='glyphicon glyphicon-remove form-control-feedback'></span>");
+                                return false;
+                            }
+                            else if (/^[0-9]{8,8}$/.test(documento)) {
+                                $("#glypcn" + campo).remove();
+                                $('#' + campo).css({ "border-color": "green", "border": "2px solid green" });
+                                $('#' + campo).parent().css({ "color": "green" });
+                                $('#' + campo).parent().children('span').text("OK").show();
+                                $('#' + campo).parent().append("<span id='glypcn" + campo + "' class='glyphicon glyphicon-ok form-control-feedback'></span>");
+                                return true;
+                            }
+                            else {
+                                $("#glypcn" + campo).remove();
+                                $('#' + campo).parent().css({ "color": "brown" });
+                                $('#' + campo).css({ "border": "2px solid brown" });
+                                $('#' + campo).parent().children('span').text("Ingrese solo números").show();
+                                $('#' + campo).parent().append("<span id='glypcn" + campo + "' class='glyphicon glyphicon-remove form-control-feedback'></span>");
+                                return false;
+                            }
+                        }
+                    }
+                });
+              }
+
+
+              if (campo === 'txtNombres') {
+                  nombres = document.getElementById(campo).value;
+                  if (nombres == null || nombres.length == 0 || nombres == "") {
+                      //$("#glypcn" + campo).remove();
+                      $("#glypcn" + campo).remove();
+                      $('#' + campo).parent().css({ "color": "brown" });
+                      $('#' + campo).css({ "border": "2px solid brown" });
+                      $('#' + campo).parent().children('span').text("Ingrese su nombre").show();
+                      $('#' + campo).parent().append("<span id='glypcn" + campo + "' class='glyphicon glyphicon-remove form-control-feedback'></span>");
+                      return false;
+
+                  }
+                  else if (/^([a-zA-Z]){3,3}\s/.test(nombres)) {
+                      $("#glypcn" + campo).remove();
+                      $('#' + campo).parent().css({ "color": "brown" });
+                      $('#' + campo).css({ "border": "2px solid brown" });
+                      $('#' + campo).parent().children('span').text("No puedes tener tu primer nombre con solo tres letras.").show();
+                      $('#' + campo).parent().append("<span id='glypcn" + campo + "' class='glyphicon glyphicon-remove form-control-feedback'></span>");
+                      return false;
+                  }
+                  else if (/^([a-zA-Z]){2,2}\s/.test(nombres)) {
+                      $("#glypcn" + campo).remove();
+                      $('#' + campo).parent().css({ "color": "brown" });
+                      $('#' + campo).css({ "border": "2px solid brown" });
+                      $('#' + campo).parent().children('span').text("No puedes tener tu primer nombre con solo dos letras.").show();
+                      $('#' + campo).parent().append("<span id='glypcn" + campo + "' class='glyphicon glyphicon-remove form-control-feedback'></span>");
+                      return false;
+                  }
+                  else if (/^([a-zA-Z]\s)/.test(nombres)) {
+                      $("#glypcn" + campo).remove();
+                      $('#' + campo).parent().css({ "color": "brown" });
+                      $('#' + campo).css({ "border": "2px solid brown" });
+                      $('#' + campo).parent().children('span').text("No puedes tener tu primer nombre con solo una letra.").show();
+                      $('#' + campo).parent().append("<span id='glypcn" + campo + "' class='glyphicon glyphicon-remove form-control-feedback'></span>");
+                      return false;
+                  }
+                  else if (/([a-zA-Z]{1,}\s){2,}/.test(nombres)) {
+                      $("#glypcn" + campo).remove();
+                      $('#' + campo).parent().css({ "color": "brown" });
+                      $('#' + campo).css({ "border": "2px solid brown" });
+                      $('#' + campo).parent().children('span').text("No se permiten poner mas de un espacio en blanco").show();
+                      $('#' + campo).parent().append("<span id='glypcn" + campo + "' class='glyphicon glyphicon-remove form-control-feedback'></span>");
+                      return false;
+                  }
+                  else if (/[a-zA-Z]\s{2,}/.test(nombres)) {
+                      $("#glypcn" + campo).remove();
+                      $('#' + campo).parent().css({ "color": "brown" });
+                      $('#' + campo).css({ "border": "2px solid brown" });
+                      $('#' + campo).parent().children('span').text("No se permiten poner mas de un espacio en blanco").show();
+                      $('#' + campo).parent().append("<span id='glypcn" + campo + "' class='glyphicon glyphicon-remove form-control-feedback'></span>");
+                      return false;
+                  }
+                  else if (/^(\s)+/.test(nombres)) {
+                      $("#glypcn" + campo).remove();
+                      $('#' + campo).parent().css({ "color": "brown" });
+                      $('#' + campo).css({ "border": "2px solid brown" });
+                      $('#' + campo).parent().children('span').text("No se permiten espacios en blanco al inicio").show();
+                      $('#' + campo).parent().append("<span id='glypcn" + campo + "' class='glyphicon glyphicon-remove form-control-feedback'></span>");
+                      return false;
+                  }
+                  else if (/^[a-zA-Z áéíóúÁÉÍÓÚñÑ]{20,}$/.test(nombres)) {
+                      $("#glypcn" + campo).remove();
+                      $('#' + campo).parent().css({ "color": "brown" });
+                      $('#' + campo).css({ "border": "2px solid brown" });
+                      $('#' + campo).parent().children('span').text("No se permiten mas de 20 letras").show();
+                      $('#' + campo).parent().append("<span id='glypcn" + campo + "' class='glyphicon glyphicon-remove form-control-feedback'></span>");
+                      return false;
+                  }
+                  else if (/^[a-zA-Z áéíóúÁÉÍÓÚñÑ]{0,3}$/.test(nombres)) {
+                      $("#glypcn" + campo).remove();
+                      $('#' + campo).parent().css({ "color": "brown" });
+                      $('#' + campo).css({ "border": "2px solid brown" });
+                      $('#' + campo).parent().children('span').text("Mínimo 4 letras y Máximo 20 letras").show();
+                      $('#' + campo).parent().append("<span id='glypcn" + campo + "' class='glyphicon glyphicon-remove form-control-feedback'></span>");
+                      return false;
+                  }
+                  else if (/^[a-zA-Z áéíóúÁÉÍÓÚñÑ]{4,20}$/.test(nombres)) {
+                      $("#glypcn" + campo).remove();
+                      $('#' + campo).css({ "border-color": "green", "border": "2px solid green" });
+                      $('#' + campo).parent().css({ "color": "green" });
+                      $('#' + campo).parent().children('span').text("OK").show();
+                      $('#' + campo).parent().append("<span id='glypcn" + campo + "' class='glyphicon glyphicon-ok form-control-feedback'></span>");
+                      return true;
+                  }
+                  else {
+                      $("#glypcn" + campo).remove();
+                      $('#' + campo).parent().css({ "color": "brown" });
+                      $('#' + campo).css({ "border": "2px solid brown" });
+                      $('#' + campo).parent().children('span').text("No acepta Números ni otro caracter , solo letras").show();
+                      $('#' + campo).parent().append("<span id='glypcn" + campo + "' class='glyphicon glyphicon-remove form-control-feedback'></span>");
+                      return false;
+                  }
+              }
+
+
+              if (campo === 'txtApellidos') {
+                  nombre = document.getElementById('txtNombres').value;
+                  apellidos = document.getElementById(campo).value;
+                  if (apellidos == null || apellidos.length == 0) {
+                      $("#glypcn" + campo).remove();
+                      $('#' + campo).parent().css({ "color": "brown" });
+                      $('#' + campo).css({ "border": "2px solid brown" });
+                      $('#' + campo).parent().children('span').text("Ingrese su apellido").show();
+                      $('#' + campo).parent().append("<span id='glypcn" + campo + "' class='glyphicon glyphicon-remove form-control-feedback'></span>");
+                      return false;
+
+                  }
+                  else if (/^(\s)+/.test(apellidos)) {
+                      $("#glypcn" + campo).remove();
+                      $('#' + campo).parent().css({ "color": "brown" });
+                      $('#' + campo).css({ "border": "2px solid brown" });
+                      $('#' + campo).parent().children('span').text("No se permiten espacios en blanco al inicio").show();
+                      $('#' + campo).parent().append("<span id='glypcn" + campo + "' class='glyphicon glyphicon-remove form-control-feedback'></span>");
+                      return false;
+                  }
+                  else if (/^([a-zA-Z]){3,3}\s/.test(apellidos)) {
+                      $("#glypcn" + campo).remove();
+                      $('#' + campo).parent().css({ "color": "brown" });
+                      $('#' + campo).css({ "border": "2px solid brown" });
+                      $('#' + campo).parent().children('span').text("No puedes tener tu primer apellido con solo tres letras.").show();
+                      $('#' + campo).parent().append("<span id='glypcn" + campo + "' class='glyphicon glyphicon-remove form-control-feedback'></span>");
+                      return false;
+                  }
+                  else if (/^([a-zA-Z]){2,2}\s/.test(apellidos)) {
+                      $("#glypcn" + campo).remove();
+                      $('#' + campo).parent().css({ "color": "brown" });
+                      $('#' + campo).css({ "border": "2px solid brown" });
+                      $('#' + campo).parent().children('span').text("No puedes tener tu primer apellido con solo dos letras.").show();
+                      $('#' + campo).parent().append("<span id='glypcn" + campo + "' class='glyphicon glyphicon-remove form-control-feedback'></span>");
+                      return false;
+                  }
+                  else if (/^([a-zA-Z]\s)/.test(apellidos)) {
+                      $("#glypcn" + campo).remove();
+                      $('#' + campo).parent().css({ "color": "brown" });
+                      $('#' + campo).css({ "border": "2px solid brown" });
+                      $('#' + campo).parent().children('span').text("No puedes tener tu primer apellido con solo una letra.").show();
+                      $('#' + campo).parent().append("<span id='glypcn" + campo + "' class='glyphicon glyphicon-remove form-control-feedback'></span>");
+                      return false;
+                  }
+                  else if (/([a-zA-Z]{1,}\s){2,}/.test(apellidos)) {
+                      $("#glypcn" + campo).remove();
+                      $('#' + campo).parent().css({ "color": "brown" });
+                      $('#' + campo).css({ "border": "2px solid brown" });
+                      $('#' + campo).parent().children('span').text("No se permite poner espacios en blanco seguidos").show();
+                      $('#' + campo).parent().append("<span id='glypcn" + campo + "' class='glyphicon glyphicon-remove form-control-feedback'></span>");
+                      return false;
+                  }
+                  else if (/[a-zA-Z]\s{2,}/.test(apellidos)) {
+                      $("#glypcn" + campo).remove();
+                      $('#' + campo).parent().css({ "color": "brown" });
+                      $('#' + campo).css({ "border": "2px solid brown" });
+                      $('#' + campo).parent().children('span').text("No se permite poner espacios en blanco seguidos").show();
+                      $('#' + campo).parent().append("<span id='glypcn" + campo + "' class='glyphicon glyphicon-remove form-control-feedback'></span>");
+                      return false;
+                  }
+
+                  else if (/^[a-zA-Z áéíóúÁÉÍÓÚñÑ]{20,}$/.test(apellidos)) {
+                      $("#glypcn" + campo).remove();
+                      $('#' + campo).parent().css({ "color": "brown" });
+                      $('#' + campo).css({ "border": "2px solid brown" });
+                      $('#' + campo).parent().children('span').text("No se permiten mas de 20 letras").show();
+                      $('#' + campo).parent().append("<span id='glypcn" + campo + "' class='glyphicon glyphicon-remove form-control-feedback'></span>");
+                      return false;
+                  }
+                  else if (/^[a-zA-Z áéíóúÁÉÍÓÚñÑ]{0,3}$/.test(apellidos)) {
+                      $("#glypcn" + campo).remove();
+                      $('#' + campo).parent().css({ "color": "brown" });
+                      $('#' + campo).css({ "border": "2px solid brown" });
+                      $('#' + campo).parent().children('span').text("Mínimo 4 letras y Máximo 20 letras").show();
+                      $('#' + campo).parent().append("<span id='glypcn" + campo + "' class='glyphicon glyphicon-remove form-control-feedback'></span>");
+                      return false;
+                  }
+                  else if ((apellidos == nombre) || ((apellidos == nombre + (/[a-zA-Z]\s{2,}/.test(apellidos))))) {
+                      $("#glypcn" + campo).remove();
+                      $('#' + campo).parent().css({ "color": "brown" });
+                      $('#' + campo).css({ "border": "2px solid brown" });
+                      $('#' + campo).parent().children('span').text("Su Apellido no puede ser igual que su Nombre").show();
+                      $('#' + campo).parent().append("<span id='glypcn" + campo + "' class='glyphicon glyphicon-remove form-control-feedback'></span>");
+                      return false;
+                  }
+                  else if (/^[a-zA-Z áéíóúÁÉÍÓÚñÑ]{4,20}$/.test(apellidos)) {
+                      $("#glypcn" + campo).remove();
+                      $('#' + campo).css({ "border-color": "green", "border": "2px solid green" });
+                      $('#' + campo).parent().css({ "color": "green" });
+                      $('#' + campo).parent().children('span').text("OK").show();
+                      $('#' + campo).parent().append("<span id='glypcn" + campo + "' class='glyphicon glyphicon-ok form-control-feedback'></span>");
+                      return true;
+                  }
+                  else {
+                      $("#glypcn" + campo).remove();
+                      $('#' + campo).parent().css({ "color": "brown" });
+                      $('#' + campo).css({ "border": "2px solid brown" });
+                      $('#' + campo).parent().children('span').text("No acepta Números ni otro caracter , solo letras").show();
+                      $('#' + campo).parent().append("<span id='glypcn" + campo + "' class='glyphicon glyphicon-remove form-control-feedback'></span>");
+                      return false;
+                  }
+              }
+
+
+
+
+              if (campo === 'txtCorreo') {
+                  email = document.getElementById(campo).value;
+                  correo_existe = $("#<%=Correo_existe.ClientID%>").val();
+                <%--versiexistecorreo = document.getElementById('<%=verificarsiexistecorreo.ClientID %>').value;--%>
+                <%-- var correo = $("<%=txtCorreo.ClientID%>").val();--%>
+                $.ajax({
+                    type: "POST",
+                    //url: "MasterPageInicio.master/comprobarcorreo",
+                    url: '<%=ResolveUrl("~/pages/seguridad/validar-informacion.aspx/comprobarcorreo")%>',
+                    data: '{correo: "' + $("#txtCorreo").val() + '" }',
+                    dataType: 'JSON',
+                    contentType: "application/json; charset=utf-8",
+                    success: function (res) {
+                        if (res.d) {
+                            //alert("si existe");
+                            campo = 'txtCorreo';
+                            $("#glypcn" + campo).remove();
+                            $('#' + campo).parent().css({ "color": "brown" });
+                            $('#' + campo).css({ "border": "2px solid brown" });
+                            $('#' + campo).parent().children('span').text("Este correo ya existe").show();
+                            $('#' + campo).parent().append("<span id='glypcn" + campo + "' class='glyphicon glyphicon-remove form-control-feedback'></span>");
+                            return false;
+                           <%-- $('#<%=Correo_existe.ClientID%>').val('Si existe');--%>
+                        }
+                        else {
+
+                            if (email == null || email.length == 0 || /^\s+$/.test(email)) {
+                                $("#glypcn" + campo).remove();
+                                $('#' + campo).parent().css({ "color": "brown" });
+                                $('#' + campo).css({ "border": "2px solid brown" });
+                                $('#' + campo).parent().children('span').text("Ingrese algun Correo").show();
+                                $('#' + campo).parent().append("<span id='glypcn" + campo + "' class='glyphicon glyphicon-remove form-control-feedback'></span>");
+                                return false;
+                            }
+                            else if (/(\s)/.test(email)) {
+                                $("#glypcn" + campo).remove();
+                                $('#' + campo).parent().css({ "color": "brown" });
+                                $('#' + campo).css({ "border": "2px solid brown" });
+                                $('#' + campo).parent().children('span').text("No se permiten espacios en blanco").show();
+                                $('#' + campo).parent().append("<span id='glypcn" + campo + "' class='glyphicon glyphicon-remove form-control-feedback'></span>");
+                                return false;
+                            }
+                            else if (!(/\S+@\S+\.\S+/.test(email))) {
+                                $("#glypcn" + campo).remove();
+                                $('#' + campo).parent().css({ "color": "brown" });
+                                $('#' + campo).css({ "border": "2px solid brown" });
+                                $('#' + campo).parent().children('span').text("Ingrese un Correo valido").show();
+                                $('#' + campo).parent().append("<span id='glypcn" + campo + "' class='glyphicon glyphicon-remove form-control-feedback'></span>");
+                                return false;
+                            }
+                            else {
+                                $("#glypcn" + campo).remove();
+                                $('#' + campo).css({ "border-color": "green", "border": "2px solid green" });
+                                $('#' + campo).parent().css({ "color": "green" });
+                                $('#' + campo).parent().children('span').text("OK").show();
+                                $('#' + campo).parent().append("<span id='glypcn" + campo + "' class='glyphicon glyphicon-ok form-control-feedback'></span>");
+                                return true;
+                            }
+                        }
+                    }
+                });
+              }
+
+
+              if (campo === 'txtContra1') {
+                  documento = document.getElementById('txtDocumento').value;
+                  nombres = document.getElementById('txtNombres').value;
+                  apellidos = document.getElementById('txtApellidos').value;
+                  correo = document.getElementById('txtCorreo').value;
+                  contra1 = document.getElementById(campo).value;
+
+                  if (contra1 == null || contra1.length == 0 || contra1 == "") {
+                      $("#glypcn" + campo).remove();
+                      $('#' + campo).parent().css({ "color": "brown" });
+                      $('#' + campo).css({ "border": "2px solid brown" });
+                      $('#' + campo).parent().children('span').text("Ingrese una contraseña").show();
+                      $('#' + campo).parent().append("<span id='glypcn" + campo + "' class='glyphicon glyphicon-remove form-control-feedback'></span>");
+                      return false;
+
+                  }
+                  else if (/^(\s)+/.test(contra1)) {
+                      $("#glypcn" + campo).remove();
+                      $('#' + campo).parent().css({ "color": "brown" });
+                      $('#' + campo).css({ "border": "2px solid brown" });
+                      $('#' + campo).parent().children('span').text("No se permiten espacios en blanco al inicio").show();
+                      $('#' + campo).parent().append("<span id='glypcn" + campo + "' class='glyphicon glyphicon-remove form-control-feedback'></span>");
+                      return false;
+
+                  }
+                  else if (/(\s)/.test(contra1)) {
+                      $("#glypcn" + campo).remove();
+                      $('#' + campo).parent().css({ "color": "brown" });
+                      $('#' + campo).css({ "border": "2px solid brown" });
+                      $('#' + campo).parent().children('span').text("No se permiten espacios en blanco").show();
+                      $('#' + campo).parent().append("<span id='glypcn" + campo + "' class='glyphicon glyphicon-remove form-control-feedback'></span>");
+                      return false;
+                  }
+                  else if (/^[a-zA-Z0-9 áéíóúÁÉÍÓÚñÑ]{1,7}$/.test(contra1)) {
+                      $("#glypcn" + campo).remove();
+                      $('#' + campo).parent().css({ "color": "brown" });
+                      $('#' + campo).css({ "border": "2px solid brown" });
+                      $('#' + campo).parent().children('span').text("La contraseña debe tener entre 8 y 16 caracteres.").show();
+                      $('#' + campo).parent().append("<span id='glypcn" + campo + "' class='glyphicon glyphicon-remove form-control-feedback'></span>");
+                      return false;
+                  }
+                  else if (/^[a-zA-Z0-9 áéíóúÁÉÍÓÚñÑ]{8}$/.test(contra1)) {
+                      $("#glypcn" + campo).remove();
+                      $('#' + campo).parent().css({ "color": "brown" });
+                      $('#' + campo).css({ "border": "2px solid brown" });
+                      $('#' + campo).parent().children('span').text("La contraseña debe debe tener al menos un dígito, al menos una minúscula y al menos una mayúscula, NO puede tener otros símbolos.").show();
+                      $('#' + campo).parent().append("<span id='glypcn" + campo + "' class='glyphicon glyphicon-remove form-control-feedback'></span>");
+                      return false;
+                  }
+                  else if (/^[a-z]{1,8}$/.test(contra1)) {
+                      $("#glypcn" + campo).remove();
+                      $('#' + campo).parent().css({ "color": "brown" });
+                      $('#' + campo).css({ "border": "2px solid brown" });
+                      $('#' + campo).parent().children('span').text("La contraseña debe debe tener al menos un dígito, al menos una minúscula y al menos una mayúscula, NO puede tener otros símbolos.").show();
+                      $('#' + campo).parent().append("<span id='glypcn" + campo + "' class='glyphicon glyphicon-remove form-control-feedback'></span>");
+                      return false;
+                  }
+                  else if (/^[A-Z]{1,8}$/.test(contra1)) {
+                      $("#glypcn" + campo).remove();
+                      $('#' + campo).parent().css({ "color": "brown" });
+                      $('#' + campo).css({ "border": "2px solid brown" });
+                      $('#' + campo).parent().children('span').text("La contraseña debe debe tener al menos un dígito, al menos una minúscula y al menos una mayúscula, NO puede tener otros símbolos.").show();
+                      $('#' + campo).parent().append("<span id='glypcn" + campo + "' class='glyphicon glyphicon-remove form-control-feedback'></span>");
+                      return false;
+                  }
+                  else if (/^[0-9]{1,8}$/.test(contra1)) {
+                      $("#glypcn" + campo).remove();
+                      $('#' + campo).parent().css({ "color": "brown" });
+                      $('#' + campo).css({ "border": "2px solid brown" });
+                      $('#' + campo).parent().children('span').text("La contraseña debe debe tener al menos un dígito, al menos una minúscula y al menos una mayúscula, NO puede tener otros símbolos.").show();
+                      $('#' + campo).parent().append("<span id='glypcn" + campo + "' class='glyphicon glyphicon-remove form-control-feedback'></span>");
+                      return false;
+                  }
+                  else if (/^[a-zA-Z0-9 áéíóúÁÉÍÓÚñÑ]{16,}$/.test(contra1)) {
+                      $("#glypcn" + campo).remove();
+                      $('#' + campo).parent().css({ "color": "brown" });
+                      $('#' + campo).css({ "border": "2px solid brown" });
+                      $('#' + campo).parent().children('span').text("No se permiten mas de 16 letras").show();
+                      $('#' + campo).parent().append("<span id='glypcn" + campo + "' class='glyphicon glyphicon-remove form-control-feedback'></span>");
+                      return false;
+                  }
+
+                  else if ((contra1 == documento) || ((contra1 == documento + (/[a-zA-Z0-9]\s{2,}/.test(contra1))))) {
+                      $("#glypcn" + campo).remove();
+                      $('#' + campo).parent().css({ "color": "brown" });
+                      $('#' + campo).css({ "border": "2px solid brown" });
+                      $('#' + campo).parent().children('span').text("Su Contraseña no puede ser igual que su Documento").show();
+                      $('#' + campo).parent().append("<span id='glypcn" + campo + "' class='glyphicon glyphicon-remove form-control-feedback'></span>");
+                      return false;
+                  }
+                  else if ((contra1 == nombres) || ((contra1 == nombres + (/[a-zA-Z]\s{2,}/.test(contra1))))) {
+                      $("#glypcn" + campo).remove();
+                      $('#' + campo).parent().css({ "color": "brown" });
+                      $('#' + campo).css({ "border": "2px solid brown" });
+                      $('#' + campo).parent().children('span').text("Su Contraseña no puede ser igual que su Nombre").show();
+                      $('#' + campo).parent().append("<span id='glypcn" + campo + "' class='glyphicon glyphicon-remove form-control-feedback'></span>");
+                      return false;
+                  }
+                  else if ((contra1 == apellidos) || ((contra1 == apellidos + (/[a-zA-Z]\s{2,}/.test(contra1))))) {
+                      $("#glypcn" + campo).remove();
+                      $('#' + campo).parent().css({ "color": "brown" });
+                      $('#' + campo).css({ "border": "2px solid brown" });
+                      $('#' + campo).parent().children('span').text("Su Contraseña no puede ser igual que su Apellido").show();
+                      $('#' + campo).parent().append("<span id='glypcn" + campo + "' class='glyphicon glyphicon-remove form-control-feedback'></span>");
+                      return false;
+                  }
+                  else if ((contra1 == correo) || ((contra1 == correo + (/[a-zA-Z]\s{2,}/.test(contra1))))) {
+                      $("#glypcn" + campo).remove();
+                      $('#' + campo).parent().css({ "color": "brown" });
+                      $('#' + campo).css({ "border": "2px solid brown" });
+                      $('#' + campo).parent().children('span').text("Su Contraseña no puede ser igual que su Correo").show();
+                      $('#' + campo).parent().append("<span id='glypcn" + campo + "' class='glyphicon glyphicon-remove form-control-feedback'></span>");
+                      return false;
+                  }
+
+                  else if ((/^(?=\w*\d)(?=\w*[A-Z])(?=\w*[a-z])\S{8,16}$/.test(contra1))) {
+                      $("#glypcn" + campo).remove();
+                      $('#' + campo).css({ "border-color": "green", "border": "2px solid green" });
+                      $('#' + campo).parent().css({ "color": "green" });
+                      $('#' + campo).parent().children('span').text("OK").show();
+                      $('#' + campo).parent().append("<span id='glypcn" + campo + "' class='glyphicon glyphicon-ok form-control-feedback'></span>");
+                      return true;
+                  }
+              }
+
+
+              if (campo === 'txtContra2') {
+                  documento = document.getElementById('txtDocumento').value;
+                  nombres = document.getElementById('txtNombres').value;
+                  apellidos = document.getElementById('txtApellidos').value;
+                  correo = document.getElementById('txtCorreo').value;
+                  contra1 = document.getElementById('txtContra1').value;
+                  contra2 = document.getElementById(campo).value;
+
+                  if (contra2 == null || contra2.length == 0 || contra2 == "") {
+                      $("#glypcn" + campo).remove();
+                      $('#' + campo).parent().css({ "color": "brown" });
+                      $('#' + campo).css({ "border": "2px solid brown" });
+                      $('#' + campo).parent().children('span').text("Ingrese una contraseña").show();
+                      $('#' + campo).parent().append("<span id='glypcn" + campo + "' class='glyphicon glyphicon-remove form-control-feedback'></span>");
+                      return false;
+
+                  }
+                  else if (/^(\s)+/.test(contra2)) {
+                      $("#glypcn" + campo).remove();
+                      $('#' + campo).parent().css({ "color": "brown" });
+                      $('#' + campo).css({ "border": "2px solid brown" });
+                      $('#' + campo).parent().children('span').text("No se permiten espacios en blanco al inicio").show();
+                      $('#' + campo).parent().append("<span id='glypcn" + campo + "' class='glyphicon glyphicon-remove form-control-feedback'></span>");
+                      return false;
+
+                  }
+                  else if (/(\s)/.test(contra2)) {
+                      $("#glypcn" + campo).remove();
+                      $('#' + campo).parent().css({ "color": "brown" });
+                      $('#' + campo).css({ "border": "2px solid brown" });
+                      $('#' + campo).parent().children('span').text("No se permiten espacios en blanco").show();
+                      $('#' + campo).parent().append("<span id='glypcn" + campo + "' class='glyphicon glyphicon-remove form-control-feedback'></span>");
+                      return false;
+                  }
+                  else if (/^[a-zA-Z0-9 áéíóúÁÉÍÓÚñÑ]{1,7}$/.test(contra2)) {
+                      $("#glypcn" + campo).remove();
+                      $('#' + campo).parent().css({ "color": "brown" });
+                      $('#' + campo).css({ "border": "2px solid brown" });
+                      $('#' + campo).parent().children('span').text("La contraseña debe tener entre 8 y 16 caracteres.").show();
+                      $('#' + campo).parent().append("<span id='glypcn" + campo + "' class='glyphicon glyphicon-remove form-control-feedback'></span>");
+                      return false;
+                  }
+                  else if (/^[a-zA-Z0-9 áéíóúÁÉÍÓÚñÑ]{8}$/.test(contra2)) {
+                      $("#glypcn" + campo).remove();
+                      $('#' + campo).parent().css({ "color": "brown" });
+                      $('#' + campo).css({ "border": "2px solid brown" });
+                      $('#' + campo).parent().children('span').text("La contraseña debe debe tener al menos un dígito, al menos una minúscula y al menos una mayúscula, NO puede tener otros símbolos.").show();
+                      $('#' + campo).parent().append("<span id='glypcn" + campo + "' class='glyphicon glyphicon-remove form-control-feedback'></span>");
+                      return false;
+                  }
+                  else if (/^[a-z]{1,8}$/.test(contra2)) {
+                      $("#glypcn" + campo).remove();
+                      $('#' + campo).parent().css({ "color": "brown" });
+                      $('#' + campo).css({ "border": "2px solid brown" });
+                      $('#' + campo).parent().children('span').text("La contraseña debe debe tener al menos un dígito, al menos una minúscula y al menos una mayúscula, NO puede tener otros símbolos.").show();
+                      $('#' + campo).parent().append("<span id='glypcn" + campo + "' class='glyphicon glyphicon-remove form-control-feedback'></span>");
+                      return false;
+                  }
+                  else if (/^[A-Z]{1,8}$/.test(contra2)) {
+                      $("#glypcn" + campo).remove();
+                      $('#' + campo).parent().css({ "color": "brown" });
+                      $('#' + campo).css({ "border": "2px solid brown" });
+                      $('#' + campo).parent().children('span').text("La contraseña debe debe tener al menos un dígito, al menos una minúscula y al menos una mayúscula, NO puede tener otros símbolos.").show();
+                      $('#' + campo).parent().append("<span id='glypcn" + campo + "' class='glyphicon glyphicon-remove form-control-feedback'></span>");
+                      return false;
+                  }
+                  else if (/^[0-9]{1,8}$/.test(contra2)) {
+                      $("#glypcn" + campo).remove();
+                      $('#' + campo).parent().css({ "color": "brown" });
+                      $('#' + campo).css({ "border": "2px solid brown" });
+                      $('#' + campo).parent().children('span').text("La contraseña debe debe tener al menos un dígito, al menos una minúscula y al menos una mayúscula, NO puede tener otros símbolos.").show();
+                      $('#' + campo).parent().append("<span id='glypcn" + campo + "' class='glyphicon glyphicon-remove form-control-feedback'></span>");
+                      return false;
+                  }
+                  else if (/^[a-zA-Z0-9 áéíóúÁÉÍÓÚñÑ]{16,}$/.test(contra2)) {
+                      $("#glypcn" + campo).remove();
+                      $('#' + campo).parent().css({ "color": "brown" });
+                      $('#' + campo).css({ "border": "2px solid brown" });
+                      $('#' + campo).parent().children('span').text("No se permiten mas de 16 letras").show();
+                      $('#' + campo).parent().append("<span id='glypcn" + campo + "' class='glyphicon glyphicon-remove form-control-feedback'></span>");
+                      return false;
+                  }
+
+                  else if ((contra2 == documento) || ((contra2 == documento + (/[a-zA-Z0-9]\s{2,}/.test(contra2))))) {
+                      $("#glypcn" + campo).remove();
+                      $('#' + campo).parent().css({ "color": "brown" });
+                      $('#' + campo).css({ "border": "2px solid brown" });
+                      $('#' + campo).parent().children('span').text("Su Contraseña no puede ser igual que su Documento").show();
+                      $('#' + campo).parent().append("<span id='glypcn" + campo + "' class='glyphicon glyphicon-remove form-control-feedback'></span>");
+                      return false;
+                  }
+                  else if ((contra2 == nombres) || ((contra2 == nombres + (/[a-zA-Z]\s{2,}/.test(contra2))))) {
+                      $("#glypcn" + campo).remove();
+                      $('#' + campo).parent().css({ "color": "brown" });
+                      $('#' + campo).css({ "border": "2px solid brown" });
+                      $('#' + campo).parent().children('span').text("Su Contraseña no puede ser igual que su Nombre").show();
+                      $('#' + campo).parent().append("<span id='glypcn" + campo + "' class='glyphicon glyphicon-remove form-control-feedback'></span>");
+                      return false;
+                  }
+                  else if ((contra2 == apellidos) || ((contra2 == apellidos + (/[a-zA-Z]\s{2,}/.test(contra2))))) {
+                      $("#glypcn" + campo).remove();
+                      $('#' + campo).parent().css({ "color": "brown" });
+                      $('#' + campo).css({ "border": "2px solid brown" });
+                      $('#' + campo).parent().children('span').text("Su Contraseña no puede ser igual que su Apellido").show();
+                      $('#' + campo).parent().append("<span id='glypcn" + campo + "' class='glyphicon glyphicon-remove form-control-feedback'></span>");
+                      return false;
+                  }
+                  else if ((contra2 == correo) || ((contra2 == correo + (/[a-zA-Z]\s{2,}/.test(contra2))))) {
+                      $("#glypcn" + campo).remove();
+                      $('#' + campo).parent().css({ "color": "brown" });
+                      $('#' + campo).css({ "border": "2px solid brown" });
+                      $('#' + campo).parent().children('span').text("Su Contraseña no puede ser igual que su Correo").show();
+                      $('#' + campo).parent().append("<span id='glypcn" + campo + "' class='glyphicon glyphicon-remove form-control-feedback'></span>");
+                      return false;
+                  }
+                  else if ((/^(?=\w*\d)(?=\w*[A-Z])(?=\w*[a-z])\S{8,16}$/.test(contra2)) & (contra2 != contra1)) {
+                      $("#glypcn" + campo).remove();
+                      $('#' + campo).parent().css({ "color": "brown" });
+                      $('#' + campo).css({ "border": "2px solid brown" });
+                      $('#' + campo).parent().children('span').text("Su Contraseña 2 debe ser igual que su Contraseña 1").show();
+                      $('#' + campo).parent().append("<span id='glypcn" + campo + "' class='glyphicon glyphicon-remove form-control-feedback'></span>");
+                      return false;
+                  }
+
+                  else if ((/^(?=\w*\d)(?=\w*[A-Z])(?=\w*[a-z])\S{8,16}$/.test(contra2)) & (contra2 === contra1)) {
+                      $("#glypcn" + campo).remove();
+                      $('#' + campo).css({ "border-color": "green", "border": "2px solid green" });
+                      $('#' + campo).parent().css({ "color": "green" });
+                      $('#' + campo).parent().children('span').text("OK").show();
+                      $('#' + campo).parent().append("<span id='glypcn" + campo + "' class='glyphicon glyphicon-ok form-control-feedback'></span>");
+                      return true;
+                  }
+              }
+            }
+
+        </script>
+
+    </form>
+</body>
+</html>

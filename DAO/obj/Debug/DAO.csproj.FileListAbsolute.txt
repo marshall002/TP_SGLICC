@@ -1,0 +1,8 @@
+C:\Users\Roger\Desktop\Cursos 2016-I\Taller de Gerencia de Proyectos\2018-1\1er Entregable\SGLTCC\DAO\bin\Debug\DAO.dll
+C:\Users\Roger\Desktop\Cursos 2016-I\Taller de Gerencia de Proyectos\2018-1\1er Entregable\SGLTCC\DAO\bin\Debug\DAO.pdb
+C:\Users\Roger\Desktop\Cursos 2016-I\Taller de Gerencia de Proyectos\2018-1\1er Entregable\SGLTCC\DAO\bin\Debug\DTO.dll
+C:\Users\Roger\Desktop\Cursos 2016-I\Taller de Gerencia de Proyectos\2018-1\1er Entregable\SGLTCC\DAO\bin\Debug\DTO.pdb
+C:\Users\Roger\Desktop\Cursos 2016-I\Taller de Gerencia de Proyectos\2018-1\1er Entregable\SGLTCC\DAO\obj\Debug\DAO.csprojResolveAssemblyReference.cache
+C:\Users\Roger\Desktop\Cursos 2016-I\Taller de Gerencia de Proyectos\2018-1\1er Entregable\SGLTCC\DAO\obj\Debug\DAO.csproj.CoreCompileInputs.cache
+C:\Users\Roger\Desktop\Cursos 2016-I\Taller de Gerencia de Proyectos\2018-1\1er Entregable\SGLTCC\DAO\obj\Debug\DAO.dll
+C:\Users\Roger\Desktop\Cursos 2016-I\Taller de Gerencia de Proyectos\2018-1\1er Entregable\SGLTCC\DAO\obj\Debug\DAO.pdb
