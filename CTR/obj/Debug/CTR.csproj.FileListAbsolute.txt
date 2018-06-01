@@ -1,0 +1,63 @@
+C:\Users\Roger\Desktop\Cursos 2016-I\Taller de Gerencia de Proyectos\2018-1\1er Entregable\SGLTCC\CTR\bin\Debug\CTR.dll
+C:\Users\Roger\Desktop\Cursos 2016-I\Taller de Gerencia de Proyectos\2018-1\1er Entregable\SGLTCC\CTR\bin\Debug\CTR.pdb
+C:\Users\Roger\Desktop\Cursos 2016-I\Taller de Gerencia de Proyectos\2018-1\1er Entregable\SGLTCC\CTR\bin\Debug\DAO.dll
+C:\Users\Roger\Desktop\Cursos 2016-I\Taller de Gerencia de Proyectos\2018-1\1er Entregable\SGLTCC\CTR\bin\Debug\DTO.dll
+C:\Users\Roger\Desktop\Cursos 2016-I\Taller de Gerencia de Proyectos\2018-1\1er Entregable\SGLTCC\CTR\bin\Debug\DAO.pdb
+C:\Users\Roger\Desktop\Cursos 2016-I\Taller de Gerencia de Proyectos\2018-1\1er Entregable\SGLTCC\CTR\bin\Debug\DTO.pdb
+C:\Users\Roger\Desktop\Cursos 2016-I\Taller de Gerencia de Proyectos\2018-1\1er Entregable\SGLTCC\CTR\obj\Debug\CTR.csprojResolveAssemblyReference.cache
+C:\Users\Roger\Desktop\Cursos 2016-I\Taller de Gerencia de Proyectos\2018-1\1er Entregable\SGLTCC\CTR\obj\Debug\CTR.csproj.CoreCompileInputs.cache
+C:\Users\Roger\Desktop\Cursos 2016-I\Taller de Gerencia de Proyectos\2018-1\1er Entregable\SGLTCC\CTR\obj\Debug\CTR.dll
+C:\Users\Roger\Desktop\Cursos 2016-I\Taller de Gerencia de Proyectos\2018-1\1er Entregable\SGLTCC\CTR\obj\Debug\CTR.pdb
+C:\Users\AVG\Desktop\SGLTCC\CTR\bin\Debug\CTR.dll
+C:\Users\AVG\Desktop\SGLTCC\CTR\bin\Debug\CTR.pdb
+C:\Users\AVG\Desktop\SGLTCC\CTR\bin\Debug\DAO.dll
+C:\Users\AVG\Desktop\SGLTCC\CTR\bin\Debug\DTO.dll
+C:\Users\AVG\Desktop\SGLTCC\CTR\bin\Debug\DAO.pdb
+C:\Users\AVG\Desktop\SGLTCC\CTR\bin\Debug\DTO.pdb
+C:\Users\AVG\Desktop\SGLTCC\CTR\obj\Debug\CTR.csprojAssemblyReference.cache
+C:\Users\AVG\Desktop\SGLTCC\CTR\obj\Debug\CTR.csproj.CoreCompileInputs.cache
+C:\Users\AVG\Desktop\SGLTCC\CTR\obj\Debug\CTR.csproj.CopyComplete
+C:\Users\AVG\Desktop\SGLTCC\CTR\obj\Debug\CTR.dll
+C:\Users\AVG\Desktop\SGLTCC\CTR\obj\Debug\CTR.pdb
+C:\Users\SEBASTIAN\Desktop\2018-1\Proyectos\SGLICC.2.0\SGLICC_VERSION NUEVA\SGLTCC\CTR\bin\Debug\CTR.dll
+C:\Users\SEBASTIAN\Desktop\2018-1\Proyectos\SGLICC.2.0\SGLICC_VERSION NUEVA\SGLTCC\CTR\bin\Debug\CTR.pdb
+C:\Users\SEBASTIAN\Desktop\2018-1\Proyectos\SGLICC.2.0\SGLICC_VERSION NUEVA\SGLTCC\CTR\bin\Debug\DAO.dll
+C:\Users\SEBASTIAN\Desktop\2018-1\Proyectos\SGLICC.2.0\SGLICC_VERSION NUEVA\SGLTCC\CTR\bin\Debug\DTO.dll
+C:\Users\SEBASTIAN\Desktop\2018-1\Proyectos\SGLICC.2.0\SGLICC_VERSION NUEVA\SGLTCC\CTR\bin\Debug\DAO.pdb
+C:\Users\SEBASTIAN\Desktop\2018-1\Proyectos\SGLICC.2.0\SGLICC_VERSION NUEVA\SGLTCC\CTR\bin\Debug\DTO.pdb
+C:\Users\SEBASTIAN\Desktop\2018-1\Proyectos\SGLICC.2.0\SGLICC_VERSION NUEVA\SGLTCC\CTR\obj\Debug\CTR.csprojResolveAssemblyReference.cache
+C:\Users\SEBASTIAN\Desktop\2018-1\Proyectos\SGLICC.2.0\SGLICC_VERSION NUEVA\SGLTCC\CTR\obj\Debug\CTR.dll
+C:\Users\SEBASTIAN\Desktop\2018-1\Proyectos\SGLICC.2.0\SGLICC_VERSION NUEVA\SGLTCC\CTR\obj\Debug\CTR.pdb
+C:\Users\Carlos\Desktop\Progra_Sebastián\SGLICC.2.0 (1)\SGLICC.2.0\SGLICC_VERSION NUEVA\SGLTCC\CTR\bin\Debug\CTR.dll
+C:\Users\Carlos\Desktop\Progra_Sebastián\SGLICC.2.0 (1)\SGLICC.2.0\SGLICC_VERSION NUEVA\SGLTCC\CTR\bin\Debug\CTR.pdb
+C:\Users\Carlos\Desktop\Progra_Sebastián\SGLICC.2.0 (1)\SGLICC.2.0\SGLICC_VERSION NUEVA\SGLTCC\CTR\bin\Debug\DAO.dll
+C:\Users\Carlos\Desktop\Progra_Sebastián\SGLICC.2.0 (1)\SGLICC.2.0\SGLICC_VERSION NUEVA\SGLTCC\CTR\bin\Debug\DTO.dll
+C:\Users\Carlos\Desktop\Progra_Sebastián\SGLICC.2.0 (1)\SGLICC.2.0\SGLICC_VERSION NUEVA\SGLTCC\CTR\bin\Debug\DAO.pdb
+C:\Users\Carlos\Desktop\Progra_Sebastián\SGLICC.2.0 (1)\SGLICC.2.0\SGLICC_VERSION NUEVA\SGLTCC\CTR\bin\Debug\DTO.pdb
+C:\Users\Carlos\Desktop\Progra_Sebastián\SGLICC.2.0 (1)\SGLICC.2.0\SGLICC_VERSION NUEVA\SGLTCC\CTR\obj\Debug\CTR.csprojAssemblyReference.cache
+C:\Users\Carlos\Desktop\Progra_Sebastián\SGLICC.2.0 (1)\SGLICC.2.0\SGLICC_VERSION NUEVA\SGLTCC\CTR\obj\Debug\CTR.csproj.CoreCompileInputs.cache
+C:\Users\Carlos\Desktop\Progra_Sebastián\SGLICC.2.0 (1)\SGLICC.2.0\SGLICC_VERSION NUEVA\SGLTCC\CTR\obj\Debug\CTR.csproj.CopyComplete
+C:\Users\Carlos\Desktop\Progra_Sebastián\SGLICC.2.0 (1)\SGLICC.2.0\SGLICC_VERSION NUEVA\SGLTCC\CTR\obj\Debug\CTR.dll
+C:\Users\Carlos\Desktop\Progra_Sebastián\SGLICC.2.0 (1)\SGLICC.2.0\SGLICC_VERSION NUEVA\SGLTCC\CTR\obj\Debug\CTR.pdb
+D:\Angello\adsasdasdasd\SGLICC.2.0\SGLICC.2.0\SGLICC_VERSION NUEVA\SGLTCC\CTR\bin\Debug\CTR.dll
+D:\Angello\adsasdasdasd\SGLICC.2.0\SGLICC.2.0\SGLICC_VERSION NUEVA\SGLTCC\CTR\bin\Debug\CTR.pdb
+D:\Angello\adsasdasdasd\SGLICC.2.0\SGLICC.2.0\SGLICC_VERSION NUEVA\SGLTCC\CTR\bin\Debug\DAO.dll
+D:\Angello\adsasdasdasd\SGLICC.2.0\SGLICC.2.0\SGLICC_VERSION NUEVA\SGLTCC\CTR\bin\Debug\DTO.dll
+D:\Angello\adsasdasdasd\SGLICC.2.0\SGLICC.2.0\SGLICC_VERSION NUEVA\SGLTCC\CTR\bin\Debug\DAO.pdb
+D:\Angello\adsasdasdasd\SGLICC.2.0\SGLICC.2.0\SGLICC_VERSION NUEVA\SGLTCC\CTR\bin\Debug\DTO.pdb
+D:\Angello\adsasdasdasd\SGLICC.2.0\SGLICC.2.0\SGLICC_VERSION NUEVA\SGLTCC\CTR\obj\Debug\CTR.csprojAssemblyReference.cache
+D:\Angello\adsasdasdasd\SGLICC.2.0\SGLICC.2.0\SGLICC_VERSION NUEVA\SGLTCC\CTR\obj\Debug\CTR.csproj.CoreCompileInputs.cache
+D:\Angello\adsasdasdasd\SGLICC.2.0\SGLICC.2.0\SGLICC_VERSION NUEVA\SGLTCC\CTR\obj\Debug\CTR.csproj.CopyComplete
+D:\Angello\adsasdasdasd\SGLICC.2.0\SGLICC.2.0\SGLICC_VERSION NUEVA\SGLTCC\CTR\obj\Debug\CTR.dll
+D:\Angello\adsasdasdasd\SGLICC.2.0\SGLICC.2.0\SGLICC_VERSION NUEVA\SGLTCC\CTR\obj\Debug\CTR.pdb
+C:\Users\HP\Desktop\integracion y ultima version\SGLICC.2.0\SGLICC_VERSION NUEVA\SGLTCC\CTR\bin\Debug\CTR.dll
+C:\Users\HP\Desktop\integracion y ultima version\SGLICC.2.0\SGLICC_VERSION NUEVA\SGLTCC\CTR\bin\Debug\CTR.pdb
+C:\Users\HP\Desktop\integracion y ultima version\SGLICC.2.0\SGLICC_VERSION NUEVA\SGLTCC\CTR\bin\Debug\DAO.dll
+C:\Users\HP\Desktop\integracion y ultima version\SGLICC.2.0\SGLICC_VERSION NUEVA\SGLTCC\CTR\bin\Debug\DTO.dll
+C:\Users\HP\Desktop\integracion y ultima version\SGLICC.2.0\SGLICC_VERSION NUEVA\SGLTCC\CTR\bin\Debug\DAO.pdb
+C:\Users\HP\Desktop\integracion y ultima version\SGLICC.2.0\SGLICC_VERSION NUEVA\SGLTCC\CTR\bin\Debug\DTO.pdb
+C:\Users\HP\Desktop\integracion y ultima version\SGLICC.2.0\SGLICC_VERSION NUEVA\SGLTCC\CTR\obj\Debug\CTR.csprojAssemblyReference.cache
+C:\Users\HP\Desktop\integracion y ultima version\SGLICC.2.0\SGLICC_VERSION NUEVA\SGLTCC\CTR\obj\Debug\CTR.csproj.CoreCompileInputs.cache
+C:\Users\HP\Desktop\integracion y ultima version\SGLICC.2.0\SGLICC_VERSION NUEVA\SGLTCC\CTR\obj\Debug\CTR.csproj.CopyComplete
+C:\Users\HP\Desktop\integracion y ultima version\SGLICC.2.0\SGLICC_VERSION NUEVA\SGLTCC\CTR\obj\Debug\CTR.dll
+C:\Users\HP\Desktop\integracion y ultima version\SGLICC.2.0\SGLICC_VERSION NUEVA\SGLTCC\CTR\obj\Debug\CTR.pdb

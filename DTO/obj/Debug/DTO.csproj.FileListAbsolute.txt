@@ -1,0 +1,35 @@
+C:\Users\Roger\Desktop\Cursos 2016-I\Taller de Gerencia de Proyectos\2018-1\1er Entregable\SGLTCC\DTO\bin\Debug\DTO.dll
+C:\Users\Roger\Desktop\Cursos 2016-I\Taller de Gerencia de Proyectos\2018-1\1er Entregable\SGLTCC\DTO\bin\Debug\DTO.pdb
+C:\Users\Roger\Desktop\Cursos 2016-I\Taller de Gerencia de Proyectos\2018-1\1er Entregable\SGLTCC\DTO\obj\Debug\DTO.csprojResolveAssemblyReference.cache
+C:\Users\Roger\Desktop\Cursos 2016-I\Taller de Gerencia de Proyectos\2018-1\1er Entregable\SGLTCC\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+C:\Users\Roger\Desktop\Cursos 2016-I\Taller de Gerencia de Proyectos\2018-1\1er Entregable\SGLTCC\DTO\obj\Debug\DTO.dll
+C:\Users\Roger\Desktop\Cursos 2016-I\Taller de Gerencia de Proyectos\2018-1\1er Entregable\SGLTCC\DTO\obj\Debug\DTO.pdb
+C:\Users\AVG\Desktop\SGLTCC\DTO\bin\Debug\DTO.dll
+C:\Users\AVG\Desktop\SGLTCC\DTO\bin\Debug\DTO.pdb
+C:\Users\AVG\Desktop\SGLTCC\DTO\obj\Debug\DTO.csprojAssemblyReference.cache
+C:\Users\AVG\Desktop\SGLTCC\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+C:\Users\AVG\Desktop\SGLTCC\DTO\obj\Debug\DTO.dll
+C:\Users\AVG\Desktop\SGLTCC\DTO\obj\Debug\DTO.pdb
+C:\Users\SEBASTIAN\Desktop\2018-1\Proyectos\SGLICC.2.0\SGLICC_VERSION NUEVA\SGLTCC\DTO\bin\Debug\DTO.dll
+C:\Users\SEBASTIAN\Desktop\2018-1\Proyectos\SGLICC.2.0\SGLICC_VERSION NUEVA\SGLTCC\DTO\bin\Debug\DTO.pdb
+C:\Users\SEBASTIAN\Desktop\2018-1\Proyectos\SGLICC.2.0\SGLICC_VERSION NUEVA\SGLTCC\DTO\obj\Debug\DTO.csprojResolveAssemblyReference.cache
+C:\Users\SEBASTIAN\Desktop\2018-1\Proyectos\SGLICC.2.0\SGLICC_VERSION NUEVA\SGLTCC\DTO\obj\Debug\DTO.dll
+C:\Users\SEBASTIAN\Desktop\2018-1\Proyectos\SGLICC.2.0\SGLICC_VERSION NUEVA\SGLTCC\DTO\obj\Debug\DTO.pdb
+C:\Users\Carlos\Desktop\Progra_Sebastián\SGLICC.2.0 (1)\SGLICC.2.0\SGLICC_VERSION NUEVA\SGLTCC\DTO\bin\Debug\DTO.dll
+C:\Users\Carlos\Desktop\Progra_Sebastián\SGLICC.2.0 (1)\SGLICC.2.0\SGLICC_VERSION NUEVA\SGLTCC\DTO\bin\Debug\DTO.pdb
+C:\Users\Carlos\Desktop\Progra_Sebastián\SGLICC.2.0 (1)\SGLICC.2.0\SGLICC_VERSION NUEVA\SGLTCC\DTO\obj\Debug\DTO.csprojAssemblyReference.cache
+C:\Users\Carlos\Desktop\Progra_Sebastián\SGLICC.2.0 (1)\SGLICC.2.0\SGLICC_VERSION NUEVA\SGLTCC\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+C:\Users\Carlos\Desktop\Progra_Sebastián\SGLICC.2.0 (1)\SGLICC.2.0\SGLICC_VERSION NUEVA\SGLTCC\DTO\obj\Debug\DTO.dll
+C:\Users\Carlos\Desktop\Progra_Sebastián\SGLICC.2.0 (1)\SGLICC.2.0\SGLICC_VERSION NUEVA\SGLTCC\DTO\obj\Debug\DTO.pdb
+D:\Angello\adsasdasdasd\SGLICC.2.0\SGLICC.2.0\SGLICC_VERSION NUEVA\SGLTCC\DTO\bin\Debug\DTO.dll
+D:\Angello\adsasdasdasd\SGLICC.2.0\SGLICC.2.0\SGLICC_VERSION NUEVA\SGLTCC\DTO\bin\Debug\DTO.pdb
+D:\Angello\adsasdasdasd\SGLICC.2.0\SGLICC.2.0\SGLICC_VERSION NUEVA\SGLTCC\DTO\obj\Debug\DTO.csprojAssemblyReference.cache
+D:\Angello\adsasdasdasd\SGLICC.2.0\SGLICC.2.0\SGLICC_VERSION NUEVA\SGLTCC\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+D:\Angello\adsasdasdasd\SGLICC.2.0\SGLICC.2.0\SGLICC_VERSION NUEVA\SGLTCC\DTO\obj\Debug\DTO.dll
+D:\Angello\adsasdasdasd\SGLICC.2.0\SGLICC.2.0\SGLICC_VERSION NUEVA\SGLTCC\DTO\obj\Debug\DTO.pdb
+C:\Users\HP\Desktop\integracion y ultima version\SGLICC.2.0\SGLICC_VERSION NUEVA\SGLTCC\DTO\bin\Debug\DTO.dll
+C:\Users\HP\Desktop\integracion y ultima version\SGLICC.2.0\SGLICC_VERSION NUEVA\SGLTCC\DTO\bin\Debug\DTO.pdb
+C:\Users\HP\Desktop\integracion y ultima version\SGLICC.2.0\SGLICC_VERSION NUEVA\SGLTCC\DTO\obj\Debug\DTO.csprojAssemblyReference.cache
+C:\Users\HP\Desktop\integracion y ultima version\SGLICC.2.0\SGLICC_VERSION NUEVA\SGLTCC\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+C:\Users\HP\Desktop\integracion y ultima version\SGLICC.2.0\SGLICC_VERSION NUEVA\SGLTCC\DTO\obj\Debug\DTO.dll
+C:\Users\HP\Desktop\integracion y ultima version\SGLICC.2.0\SGLICC_VERSION NUEVA\SGLTCC\DTO\obj\Debug\DTO.pdb

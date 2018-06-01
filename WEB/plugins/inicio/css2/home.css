@@ -1,0 +1,461 @@
+﻿/* 
+    Created on : Jul 4, 2017, 12:43:10 AM
+    Author     : Atta-Ur-Rehman Shah (http://attacomsian.com)
+*/
+/*Google fonts*/
+
+
+
+
+
+
+
+.b-container-projects {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex
+}
+
+
+.caja-titulo-departamento, .caja-titulo-provincia, .caja-titulo-disrito {
+    max-height: 35px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    height: 180px;
+}
+
+
+
+.caja-contenido-departamentos {
+    /*padding: 12px;*/
+    font-size: 14px;
+    height: 50px;
+    width: 290px;
+    margin-right: 20px;
+}
+
+
+.caja-contenido-provincias {
+    /*padding: 12px;*/
+    font-size: 14px;
+    height: 50px;
+    width: 290px;
+    margin-right: 20px;
+}
+
+.caja-contenido-distritos {
+    /*padding: 12px;*/
+    font-size: 14px;
+    height: 50px;
+    width: 290px;
+    margin-right: 20px;
+}
+
+
+/*Esto de para los combos de departamento , provincia y distritos*/
+.clase-departamentos {
+    display: block;
+    width: 100%;
+    padding: .5rem .75rem;
+    font-size: 1rem;
+    line-height: 1.25;
+    color: #464a4c;
+    background-color: #fff;
+    background-image: none;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: .25rem;
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s,-webkit-box-shadow ease-in-out .15s
+}
+
+.clase-provincias {
+    display: block;
+    width: 100%;
+    padding: .5rem .75rem;
+    font-size: 1rem;
+    line-height: 1.25;
+    color: #464a4c;
+    background-color: #fff;
+    background-image: none;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: .25rem;
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s,-webkit-box-shadow ease-in-out .15s
+}
+
+.clase-distritos {
+    display: block;
+    width: 100%;
+    padding: .5rem .75rem;
+    font-size: 1rem;
+    line-height: 1.25;
+    color: #464a4c;
+    background-color: #fff;
+    background-image: none;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: .25rem;
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s,-webkit-box-shadow ease-in-out .15s
+}
+
+
+
+
+
+
+
+
+
+.b-card-ellipsis, .b-card .b-card-subtitle, .b-card .b-card-text, .b-card .b-card-title {
+    max-height: 21px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis
+}
+
+.b-card {
+    margin: 6px;
+    display: inline-block;
+    position: relative;
+    font-family: gotham-book,arial,sans-serif;
+    box-shadow: 0 0 12px 0 rgba(0,0,0,.3);
+    width: 22.95%;
+    overflow: hidden;
+    margin-bottom: 30px
+}
+
+    .b-card .b-card-tag {
+        background-color: #ea5a0b;
+        color: #fff;
+        font-size: 12px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        width: 80px;
+        height: 20px;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        z-index: 1
+    }
+
+    .b-card .b-card-image {
+        margin: 0;
+        width: 100%;
+        height: 0;
+        overflow: hidden;
+        position: relative;
+        background: url(../../atomic/img/rolling.gif?v=0288106) no-repeat 50% #dadada
+    }
+
+        .b-card .b-card-image img {
+            display: block;
+            vertical-align: top;
+            height: auto;
+            position: absolute;
+            background: #dadada;
+            width: 100%;
+            height: 100%
+        }
+
+    .b-card .b-card-image--project {
+        padding-bottom: 87.69%
+    }
+
+    .b-card .b-card-image--announcement {
+        padding-bottom: 70.38%
+    }
+
+    .b-card .b-card-information {
+        padding: 12px 10px;
+        font-size: 14px;
+        height: 87px
+    }
+
+    .b-card .b-card-title {
+        color: #ea5a0b;
+        margin: 0;
+        font-weight: 400;
+        font-size: inherit;
+        line-height: 1.5em
+    }
+
+    .b-card .b-card-subtitle {
+        font-family: gotham-medium,arial,sans-serif
+    }
+
+.b-card__project {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1
+}
+
+    .b-card__project div:last-child:not(:empty) {
+        position: absolute;
+        z-index: 3;
+        width: 100%;
+        height: 100%;
+        display: inline-block;
+        top: 0
+    }
+
+.b-container-projects {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex
+}
+
+
+
+
+
+/*esto hace que aparesca la flecha*/
+.slick-list, .slick-slider {
+    position: relative;
+    display: block
+}
+
+
+/*esto posiciona laa flecha en el centro*/
+.slick-list {
+    overflow: hidden;
+    margin: 0;
+    padding: 0
+}
+
+    
+
+
+/*estos son los 3 puntos que salen encima dee las ventas destacadas*/
+
+.slick-dots {
+    position: absolute;
+    bottom: -25px;
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center
+}
+    /*estos son los 3 puntos que salen encima dee las ventas destacadas*/
+    .slick-dots li {
+        position: relative;
+        display: inline-block;
+        margin: 0 5px;
+        padding: 0
+    }
+        /*estos separa a los 3 puntos uno del otro */
+        .slick-dots li, .slick-dots li button {
+            width: 20px;
+            height: 20px;
+            cursor: pointer
+        }
+
+
+            /*estos son los 3 puntos que salen encima dee las ventas destacadas*/
+                .slick-dots li button:before {
+                    font-family: slick;
+                    font-size: 6px;
+                    line-height: 20px;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 20px;
+                    height: 20px;
+                    content: '•';
+                    text-align: center;
+                    opacity: .25;
+                    color: #000;
+                    -webkit-font-smoothing: antialiased;
+                    -moz-osx-font-smoothing: grayscale
+                }
+            /*esto pinta de negro cada circulo mientras se avanza con la flecha*/
+            .slick-dots li.slick-active button:before {
+                opacity: .75;
+                color: #000
+            }
+
+
+.b-suggestions-property .b-suggestion-block-wrap .b-suggestion-cards {
+    margin-left: -6px;
+    margin-right: -6px;
+    max-height: 328px
+
+
+}
+
+    .b-suggestions-property .b-suggestion-block-wrap .b-suggestion-cards .slick-arrow {
+        position: absolute;
+        z-index: 5;
+        bottom: 20px;
+        top: 0;
+        margin: auto;
+        font-size: 36px;
+        color: #fff;
+        text-shadow: 0 0 6px #a1a1a1
+    }
+
+    .b-suggestions-property .b-suggestion-block-wrap .b-suggestion-cards .slick-next {
+        right: -2px
+    }
+
+    .b-suggestions-property .b-suggestion-block-wrap .b-suggestion-cards .slick-prev {
+        left: -2px
+    }
+
+    .b-suggestions-property .b-suggestion-block-wrap .b-suggestion-cards .slick-dots {
+        top: -44px;
+        right: 0;
+        width: 60px
+    }
+
+        .b-suggestions-property .b-suggestion-block-wrap .b-suggestion-cards .slick-dots li {
+            margin: 0
+        }
+
+            .b-suggestions-property .b-suggestion-block-wrap .b-suggestion-cards .slick-dots li button:before {
+                font-size: 40px
+            }
+
+
+
+
+
+ /*paraa darle color naranja a los titulos de las ventas y compras destacadas*/ 
+.suggestion-title {
+    font-size: 22px;
+    margin: 0;
+    font-weight: 400;
+    color: #ea5a0b;
+    display: inline-block;
+    margin-right: 10px;
+    font-family: gotham,arial,sans-serif
+}
+/*para ver mas*/
+.suggestion-more {
+    display: inline-block;
+    color: #6e7781;
+    font-size: 13px
+}
+    /*para ver mas cuando ponga el click encima*/
+    .suggestion-more:hover {
+        color: #ea5a0b
+    }
+
+
+
+/*paraa las ventas destacadas el primer div*/
+
+.b-suggestion-block-wrap {
+    padding-left: 20px;
+    padding-right: 20px
+}
+    /*paraa las ventas destacadas el primer div y segundo div*/
+    .b-suggestion-block-wrap .b-suggestion-block {
+        box-sizing: content-box;
+        max-width: 1080px;
+        margin: auto;
+        /*padding-top: 30px;
+        padding-bottom: 50px;*/
+        border-top: 1px solid #eaeaea
+    }
+    /*paraa las ventas destacadas el primer div  */
+    .b-suggestion-block-wrap .b-suggestion-head {
+        margin-bottom: 25px;
+        vertical-align: bottom
+    }
+
+    .b-suggestion-block-wrap .b-suggestion-head-interbank .suggestion-title {
+        color: #8cb420
+    }
+
+
+.b-suggestions-interbank .b-suggestion-block-wrap .b-suggestion-cards {
+    margin-left: -10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: row;
+    flex-flow: row;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start
+}
+
+    .b-suggestions-interbank .b-suggestion-block-wrap .b-suggestion-cards > * {
+        margin-left: 12px
+    }
+
+.b-suggestions-news .b-suggestion-block-wrap .b-suggestion-cards {
+    margin-left: -10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: row;
+    flex-flow: row;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start
+}
+
+    .b-suggestions-news .b-suggestion-block-wrap .b-suggestion-cards > * {
+        margin-left: 12px
+    }
+
+.b-suggestions-news .b-suggestion-block-wrap .b-suggestion-block {
+    padding-top: 40px
+}
+
+@media screen and (max-width:959px) {
+    .b-suggestion-block-wrap .b-suggestion-head {
+        margin-bottom: 20px
+    }
+
+    .b-suggestion-block-wrap .b-suggestion-block {
+        padding-bottom: 40px
+    }
+}
+
+@media screen and (max-width:767px) {
+    .b-suggestion-block-wrap .suggestion-block {
+        padding-top: 20px;
+        padding-bottom: 30px
+    }
+}
+
+.b-suggestions-property .b-suggestion-block {
+    overflow: hidden;
+    margin-bottom: 50px;
+    padding: 30px 8px 0
+}
+
+    .b-suggestions-property .b-suggestion-block.b-suggestion-block--project {
+        max-height: 380px
+    }
+
+    .b-suggestions-property .b-suggestion-block.b-suggestion-block--announcement {
+        max-height: 330px
+    }

@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A6B52FAB-81D5-454E-B899-B63770FD956B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DTO</RootNamespace>
+    <AssemblyName>DTO</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Constante.cs" />
+    <Compile Include="DtoAviso.cs" />
+    <Compile Include="DtoCaracteristicasAviso.cs" />
+    <Compile Include="DtoCliente_X_Tipo_Cliente.cs" />
+    <Compile Include="DtoCompra.cs" />
+    <Compile Include="DtoDocumentos_X_Aviso.cs" />
+    <Compile Include="DtoFavoritos.cs" />
+    <Compile Include="DtoImagenes_sub_Avisos.cs" />
+    <Compile Include="DtoImagenes_X_Aviso.cs" />
+    <Compile Include="DtoInmuebles_x_avisos.cs" />
+    <Compile Include="DtoSubCaracteristicas_Inmueble_X_Aviso.cs" />
+    <Compile Include="DtoSubTipoInmueble.cs" />
+    <Compile Include="DtoCaracteristicasInmueble.cs" />
+    <Compile Include="DtoCliente.cs" />
+    <Compile Include="DtoDepartamento.cs" />
+    <Compile Include="DtoDistrito.cs" />
+    <Compile Include="DtoImagenesPublicacion.cs" />
+    <Compile Include="DtoTipoInmueble.cs" />
+    <Compile Include="DtoNotificacion.cs" />
+    <Compile Include="DtoPersona.cs" />
+    <Compile Include="DtoPersonal.cs" />
+    <Compile Include="DtoProvincia.cs" />
+    <Compile Include="DtoTipoCliente.cs" />
+    <Compile Include="DtoTipoServicio.cs" />
+    <Compile Include="DtoUsuario.cs" />
+    <Compile Include="Dto_Direccion_Especifica.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="js\admin.js" />
+    <Content Include="js\demo.js" />
+    <Content Include="js\helpers.js" />
+    <Content Include="js\jquery.gmaps.js" />
+    <Content Include="js\pages\cards\basic.js" />
+    <Content Include="js\pages\cards\colored.js" />
+    <Content Include="js\pages\charts\chartjs.js" />
+    <Content Include="js\pages\charts\flot.js" />
+    <Content Include="js\pages\charts\jquery-knob.js" />
+    <Content Include="js\pages\charts\morris.js" />
+    <Content Include="js\pages\charts\sparkline.js" />
+    <Content Include="js\pages\examples\forgot-password.js" />
+    <Content Include="js\pages\examples\sign-in.js" />
+    <Content Include="js\pages\examples\sign-up.js" />
+    <Content Include="js\pages\forms\advanced-form-elements.js" />
+    <Content Include="js\pages\forms\basic-form-elements.js" />
+    <Content Include="js\pages\forms\editors.js" />
+    <Content Include="js\pages\forms\form-validation.js" />
+    <Content Include="js\pages\forms\form-wizard.js" />
+    <Content Include="js\pages\gestionarcurso.js" />
+    <Content Include="js\pages\index.js" />
+    <Content Include="js\pages\inicio.js" />
+    <Content Include="js\pages\maps\google.js" />
+    <Content Include="js\pages\maps\jquery.gmaps.js" />
+    <Content Include="js\pages\maps\jvectormap.js" />
+    <Content Include="js\pages\maps\scriptparamapa.js" />
+    <Content Include="js\pages\medias\image-gallery.js" />
+    <Content Include="js\pages\tables\editable-table.js" />
+    <Content Include="js\pages\tables\jquery-datatable.js" />
+    <Content Include="js\pages\ui\animations.js" />
+    <Content Include="js\pages\ui\dialogs.js" />
+    <Content Include="js\pages\ui\modals.js" />
+    <Content Include="js\pages\ui\notifications.js" />
+    <Content Include="js\pages\ui\range-sliders.js" />
+    <Content Include="js\pages\ui\sortable-nestable.js" />
+    <Content Include="js\pages\ui\tooltips-popovers.js" />
+    <Content Include="js\pages\widgets\infobox\infobox-1.js" />
+    <Content Include="js\pages\widgets\infobox\infobox-2.js" />
+    <Content Include="js\pages\widgets\infobox\infobox-3.js" />
+    <Content Include="js\pages\widgets\infobox\infobox-4.js" />
+    <Content Include="js\pages\widgets\infobox\infobox-5.js" />
+    <Content Include="js\public\utils.js" />
+    <Content Include="js\script.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="js\pages\documentos\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

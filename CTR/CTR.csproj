@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D31A6CB3-9023-47C2-8F4A-834CE6582C26}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CTR</RootNamespace>
+    <AssemblyName>CTR</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CtrAviso.cs" />
+    <Compile Include="CtrCaracteristicaInmueble.cs" />
+    <Compile Include="CtrCliente.cs" />
+    <Compile Include="CtrCliente_X_Tipo_Cliente.cs" />
+    <Compile Include="CtrCompra.cs" />
+    <Compile Include="CtrDocumentos_X_Aviso.cs" />
+    <Compile Include="CtrFavoritos.cs" />
+    <Compile Include="CtrImagen.cs" />
+    <Compile Include="CtrImagenesPublicacion.cs" />
+    <Compile Include="CtrImagenes_sub_Avisos.cs" />
+    <Compile Include="CtrImagenes_X_Aviso.cs" />
+    <Compile Include="Ctrlnmueble_x_avisos.cs" />
+    <Compile Include="CtrSubCaracteristicas_Inmueble_X_Aviso.cs" />
+    <Compile Include="CtrTipoInmueble.cs" />
+    <Compile Include="CtrNotificacion.cs" />
+    <Compile Include="CtrPersona.cs" />
+    <Compile Include="CtrPersonal.cs" />
+    <Compile Include="CtrSubTipoInmueble.cs" />
+    <Compile Include="CtrTipoServicio.cs" />
+    <Compile Include="CtrUsuario.cs" />
+    <Compile Include="CtrUtils.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DAO\DAO.csproj">
+      <Project>{9dc55f1c-e9c7-4de7-b4d4-6cb8ad40ce13}</Project>
+      <Name>DAO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DTO\DTO.csproj">
+      <Project>{a6b52fab-81d5-454e-b899-b63770fd956b}</Project>
+      <Name>DTO</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

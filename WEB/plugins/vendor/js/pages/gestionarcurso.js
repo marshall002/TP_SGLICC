@@ -1,0 +1,3 @@
+﻿function abrirModalAsignarCurso() {
+    modal('modalAsignarCurso');
+}

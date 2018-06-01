@@ -1,0 +1,1135 @@
+﻿.form-control-aviso {
+    /*display: block;*/
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-image: none;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*Panel de usuario  NOTIFICACIONES*/
+
+li.novisto {
+    background-color:antiquewhite;
+}
+    li.novisto:hover {
+        background-color: antiquewhite;
+    }
+
+.contenedor-notificaciones {
+    width: 650%;    
+    
+}
+.no-palabras-fuera-de-notificaciones {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.label-count {
+    position: absolute;
+    height:17px;
+    color:#ffffff;
+    top: 2px;
+    right: 24px;
+    font-size: 18px;
+    line-height: 15px;
+    background-color:red;
+    padding: 0 4px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    border-radius: 3px;
+}
+
+.notificaciones {
+  
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.imagen-noti {
+    width: 4%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 1px;
+    padding-left: 1px; 
+}
+
+
+
+
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+    /*GridView*/
+    /*gestionar-personal*/
+    .contenedor-gridview {
+    width: 97%;
+    background-color: mintcream;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
+    text-align: center;
+    /*font-weight: bold;*/
+    border-style: groove;
+    border-width: 3px;
+    border-top-width: 3px;
+    border-bottom-width: 3px;
+    border-top-style: groove;
+    border-bottom-style:groove;
+    border-right-width:3px;
+    border-left-width:3px;
+    border-right-style:groove;
+    border-left-style:groove;
+
+}
+
+    .contenedor-gridview:hover {
+        background-color:coral;
+    }
+
+
+.cabeza-gridview {
+    font-size: 20px;
+    background-color: #3385ff;
+    color: #ffffff;
+
+
+}
+.fila-gridview {
+    font-size: 20px;
+    background-color: #ffffff;
+    border-style: groove;
+    border-width: 3px;
+    border-top-width: 3px;
+    border-bottom-width: 3px;
+    border-top-style: groove;
+    border-bottom-style: groove;
+    border-right-width: 3px;
+    border-left-width: 3px;
+    border-right-style: groove;
+    border-left-style: groove;
+    
+
+}
+    .fila-gridview:hover {
+        color: #ff3300;
+    }
+
+.pager-style {
+    background-color:aliceblue;
+    text-align:center;
+    align-content:center;
+    float:right;
+
+}
+
+.contenedor-boton-añadir-personal {
+    width: 97%;
+    /*background-color: mintcream;*/
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;    
+    /*font-weight: bold;*/
+   
+}
+
+
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*ver-informacion-personal*/
+
+.contenedor-informacion-personal {
+    width: 99%;
+    margin-left: auto;
+    margin-right: auto;   
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.columna1-informacion-personal {
+    border-style: groove;
+    border-width: 4px;
+    border-top-width: 4px;
+    border-bottom-width: 5px;
+    border-top-style: groove;
+    border-bottom-style: groove;
+    border-right-width: 3px;
+    border-left-width: 3px;
+    border-right-style: groove;
+    border-left-style: groove;    
+}
+
+.columna2-informacion-personal {
+    border-style: groove;
+    border-width: 3px;
+    border-top-width: 3px;
+    border-bottom-width: 3px;
+    border-top-style: groove;
+    border-bottom-style: groove;
+    border-right-width: 3px;
+    border-left-width: 3px;
+    border-right-style: groove;
+    border-left-style: groove;
+}
+
+.titulo-informacion-personal {
+    text-align: center;
+    padding-top: 7px;
+}
+
+.header-titulo-informacion-personal {
+    width: 100%;
+    font-size: 40px;
+    font-weight: 500;
+    background-color: #2E86C1;
+    color: #ffffff;
+}
+
+.fila-input-informacion-personal {
+    margin-left: auto;
+    margin-right: auto;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding-bottom: 10px;
+}
+
+.caja-columna1-informacion-personal {
+    width: 400px;
+}
+
+.caja-columna2-informacion-personal {
+    width: 352px;
+}
+
+
+.contenido-columna1-fila1-informacion-personal {
+    font-size: 20px;
+    font-weight: 600;
+    color: #196F3D;
+   
+}
+
+.contenido-columna2-fila1-informacion-personal {
+    font-size: 20px;
+    font-weight: 600;
+    color: #196F3D;
+   
+}
+
+
+
+.contenedor-imagen-perfil-informacion-personal {  
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.imagen-perfil-informacion-personal {
+    width: 200px;    
+    height:200px;
+}
+
+.caja-boton-informacion-personal {
+    padding-top: 20px;
+}
+
+.contenedor-imagen-empresa-informacion-personal {   
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.imagen-empresa-informacion-personal {
+    width: 400px;
+    height: 200px;
+    text-align: center;
+}
+
+
+.form-control-personalizado-informacion-personal {
+    display: block;
+    width: 100%;
+    /*padding: .5rem .75rem;*/
+    font-size: 1rem;
+    line-height: 1.25;
+    color: #464a4c;
+    background-color: #fff;
+    background-image: none;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    /*border: 1px solid rgba(0,0,0,.15);*/
+    border-radius: .25rem;
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s,-webkit-box-shadow ease-in-out .15s
+}
+
+.texto-informacion-personal {
+    font-size: 20px;
+    font-weight: 600;
+    color: #196F3D;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*Gestionar-perfil*/
+
+.contenedor-gestion-perfil {
+    width: 99%;
+    margin-left: auto;
+    margin-right: auto;
+    /*para row*/
+    /*display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px*/
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    /*padding-bottom: 15px;*/
+}
+
+.columna1-gestion-perfil {
+    border-style: groove;
+    border-width: 4px;
+    border-top-width: 4px;
+    border-bottom-width: 5px;
+    border-top-style: groove;
+    border-bottom-style: groove;
+    border-right-width: 3px;
+    border-left-width: 3px;
+    border-right-style: groove;
+    border-left-style: groove;
+
+     /*width: 100%;
+    height: 100%;
+    border-style: groove;
+    border-width: 4px;
+    border-top-width: 4px;
+    border-bottom-width: 5px;
+    border-top-style: groove;
+    border-bottom-style: groove;
+    border-right-width: 3px;
+    border-left-width: 3px;
+    border-right-style: groove;
+    border-left-style: groove;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;*/
+}
+.columna2-gestion-perfil {
+    border-style: groove;
+    border-width: 3px;
+    border-top-width: 3px;
+    border-bottom-width: 3px;
+    border-top-style: groove;
+    border-bottom-style: groove;
+    border-right-width: 3px;
+    border-left-width: 3px;
+    border-right-style: groove;
+    border-left-style: groove;
+}
+
+.titulo-gestion-perfil {
+    text-align: center;
+    padding-top: 7px;
+}
+
+.header-titulo-gestion-perfil {
+    width: 100%;
+    font-size: 40px;
+    font-weight: 500;
+    background-color: #2E86C1;
+    color: #ffffff;
+}
+
+.fila-contenedor {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    
+}
+
+.fila-input-gestion-perfil {
+    margin-left: auto;
+    margin-right: auto;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding-bottom:10px;
+}
+
+.caja-columna1-gestion-perfil {
+    width: 400px;
+}
+
+.caja-columna2-gestion-perfil {
+    width: 352px;
+}
+
+
+.contenido-columna1-fila1 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #196F3D;      
+    white-space: pre;
+}
+.contenido-columna1-fila2 {
+    
+}
+
+.contenido-columna2-fila1 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #196F3D;
+    white-space: pre;
+}
+.contenido-columna2-fila2 {
+    width: 350px;
+}
+
+.contenedor-imagen-perfil-gestion-perfil {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.imagen-perfil-gestion-perfil {
+    width: 200px;
+    height: 200px;
+    text-align: center;
+}
+
+
+
+.caja-boton-gestion-perfil {
+    padding-top: 20px;
+}
+
+
+.contenedor-imagen-empresa-gestion-perfil {
+    /*width: 100%;*/
+    /*height: 224px;*/
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.imagen-empresa-gestion-perfil {
+    width: 60%;
+    height: 211px;
+    text-align: center;
+}
+
+
+.form-control-personalizado-gestion-perfil {
+    display: block;
+    width: 100%;
+    /*padding: .5rem .75rem;*/
+    font-size: 1rem;
+    line-height: 1.25;
+    color: #464a4c;
+    background-color: #fff;
+    background-image: none;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    /*border: 1px solid rgba(0,0,0,.15);*/
+    border-radius: .25rem;
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s,-webkit-box-shadow ease-in-out .15s
+}
+
+.texto {
+    font-size: 20px;
+    font-weight: 600;
+    color: #196F3D;
+}
+
+
+/*Actualizar Mi Información Personal*/
+
+/*aqui es del modal de Imagen de Perfil */
+
+.form-control-personalizado2 {
+    display: block;
+    width: 100%;
+    padding: .4rem .75rem;
+    font-size: 1rem;
+    line-height: 1.25;
+    color: #464a4c;
+    background-color: #fff;
+    background-image: none;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: .25rem;
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s,-webkit-box-shadow ease-in-out .15s
+}
+
+.contenedor-titulo-imagen-perfil-modal {
+    margin-top: 20px;
+    margin-left: 115px;
+    margin-right: 50px;
+    font-size: 20px;
+}
+.contenedor-imagen-modal {
+    margin-top: 20px; 
+    text-align:center;   
+}
+.contenedor-subir-imagen-modal {
+    margin-top: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-size: 20px;
+}
+
+
+
+/*aqui es del modal de Nombres y Apellidos */
+
+.text-columna1 {
+    margin-left:12px;
+}
+
+.text-columna2 {
+    margin-left: 12px;
+}
+.row-personalizado {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.caja-input-modal {
+    border-radius: 27px;
+    position: relative;
+    z-index: 1;
+    justify-content: center;
+    margin-left: 43px;
+    margin-right: 43px;
+    margin-top: 30px;
+    width: 40%;
+}
+
+
+.contenido-input-modal {
+    font-family: Ubuntu-Bold;
+    font-size: 15px;
+    color: #1b3815;
+    line-height: 1.2;
+    position: relative;
+    display: block;
+    /*width: 100%;*/
+    height: 55px;
+    /*background: #ebebeb;*/
+    background-color: papayawhip;
+    border-radius: 27px;
+    padding: 0 35px 0 35px;
+    margin-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.titulo-nombres-modal {
+    margin-bottom: 22px;
+    color: forestgreen;
+    font-size: 20px;
+    height: 30px;
+    width: 30%;
+}
+
+.titulo-apellidos-modal {
+    margin-bottom: 22px;
+    color: forestgreen;
+    font-size: 20px;
+    height: 30px;
+    width: 30%;
+}
+
+/*Esto es para el modal de direccion*/
+
+.contenido-direccion {
+    margin-left: 43px;
+    /*color:red;*/
+    width:17%;
+}
+
+.contenido-region {
+    margin-left: 23px;
+}
+.contenido-autocomplete {
+    margin-left: 23px;
+   
+}
+
+.input-autocomplete {
+    width: 600px;
+    height:35px;
+    margin-bottom:13px;
+}
+
+/*aqui es del modal de fecha de nacimiento*/
+.titulo-fechanacimiento-modal {
+    margin-bottom: 22px;
+    color: forestgreen;
+    font-size: 20px;
+    height: 30px;
+}
+
+
+.caja-fecha_nacimiento_modal {
+    border-radius: 27px;
+    position: relative;
+    z-index: 1;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+  
+}
+/*aqui es del modal de Departamento - Provincia - Distrito */
+.contenedor-departamento-provincia-distrito-modal {
+    margin-top: 20px;
+    margin-left: 115px;
+    margin-right: 50px;
+    font-size:20px;
+}
+.contenedor-dropdown-modal {
+    margin-left: 100px;
+    margin-right: auto;
+    margin-bottom: 20px;
+    width:100%;
+}
+.dropdown-departamento, .dropdown-provincia, .dropdown-distrito {
+    background-color: mintcream;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom:10px;
+    width: 60%;
+    /*esto de abajo fue sacado de form-control del bootstrap.min.css*/
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-image: none;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+
+.volver-select-gestion-perfil {
+    width: 16%;
+    background-color: red;
+    color: #ffffff;
+}
+
+/*aqui es del modal de Celular */
+.titulo-celular-modal {
+    margin-bottom: 22px;
+    color: forestgreen;
+    font-size: 20px;
+    height: 30px;
+}
+
+
+.caja-celular_modal {
+    border-radius: 27px;
+    position: relative;
+    z-index: 1;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+}
+
+
+/*aqui es del modal de Teléfono */
+.titulo-telefono-modal {
+    margin-bottom: 22px;
+    color: forestgreen;
+    font-size: 20px;
+    height: 30px;
+}
+
+
+.caja-telefono_modal {
+    border-radius: 27px;
+    position: relative;
+    z-index: 1;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+}
+
+
+/*aqui es del modal de Correo */
+.titulo-correo-modal {
+    margin-bottom: 22px;
+    color: forestgreen;
+    font-size: 20px;
+    height: 30px;
+}
+
+
+.caja-correo_modal {
+    border-radius: 27px;
+    position: relative;
+    z-index: 1;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+}
+
+
+/*aqui es del modal de Documento */
+.titulo-documento-modal {
+    margin-bottom: 22px;
+    color: forestgreen;
+    font-size: 20px;
+    height: 30px;
+}
+
+
+.caja-documento_modal {
+    border-radius: 27px;
+    position: relative;
+    z-index: 1;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+}
+
+
+
+/*aqui es del modal de Imagen de Empresa */
+
+.contenedor-titulo-imagen-empresa-modal {
+    margin-top: 20px;
+    margin-left: 115px;
+    margin-right: 50px;
+    font-size: 20px;
+}
+
+.contenedor-imagen-empresa-modal {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.contenedor-subir-imagen-empresa-modal {
+    margin-top: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-size: 20px;
+}
+
+
+/*aqui es del modal de Nombre de de Empresa */
+
+.titulo-nombre-empresa-modal {
+    margin-bottom: 22px;
+    color: forestgreen;
+    font-size: 20px;
+    height: 30px;
+}
+
+
+.caja-nombre-empresa_modal {
+    border-radius: 27px;
+    position: relative;
+    z-index: 1;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+}
+
+/*aqui es del modal de Ruc */
+.titulo-ruc-modal {
+    margin-bottom: 22px;
+    color: forestgreen;
+    font-size: 20px;
+    height: 30px;
+}
+
+
+.caja-ruc_modal {
+    border-radius: 27px;
+    position: relative;
+    z-index: 1;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+}
+
+
+
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*Tabla de Información de Registro de Personal*/
+/*registrar-personal*/
+
+.row-perso-reg {
+    display: -ms-flexbox;
+    /*display: flex;*/
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; 
+}
+
+
+.form-control-personalizado-personal {
+    display: block;
+    width: 100%;
+    padding: .5rem .75rem;
+    font-size: 1rem;
+    line-height: 1.25;
+    color: #464a4c;
+    background-color: #fff;
+    background-image: none;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: .25rem;
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+   
+}
+
+.form-control-personalizado-personal2 {
+    display: block;
+    width: 100%;
+    padding: .5rem .75rem;
+    font-size: 1rem;
+    line-height: 1.25;
+    color: #464a4c;
+    background-color: #fff;
+    background-image: none;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: .25rem;
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s,-webkit-box-shadow ease-in-out .15s
+}
+
+.texto {
+    font-size: 20px;
+    font-weight: 600;
+    color: #196F3D;
+
+}
+
+
+
+.contenedor-registro-personal {
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    /*para row*/
+    /*display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px*/
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    /*padding-bottom: 15px;*/
+}
+
+/*es toda caja del registro*/
+.contenedor2-registro-personal {
+    width: 100%;
+    height: 100%;
+    border-style: groove;
+    border-width: 4px;
+    border-top-width: 4px;
+    border-bottom-width: 5px;
+    border-top-style: groove;
+    border-bottom-style: groove;
+    border-right-width: 3px;
+    border-left-width: 3px;
+    border-right-style: groove;
+    border-left-style: groove;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+
+.fila-input-registro-personal {
+    /*width: 500px;*/
+    /*height:105px;*/
+    margin-left: auto;
+    margin-right: auto;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding-bottom: 4px;
+    margin-bottom: 14px;
+}
+
+.titulo-registro {
+    text-align: center;
+    padding-top: 7px;
+}
+
+.header-titulo-registro-personal {
+    width: 100%;
+    font-size: 40px;
+    font-weight: 500;
+    background-color: #2E86C1;
+    color: #ffffff;
+}
+
+.caja-columna1-registro-personal {
+    width: 523px;
+}
+
+.caja-columna2-registro-personal {
+    width: 523px;
+}
+.caja-columna2-registro-select {
+    width: 523px;
+    display: -ms-flexbox;
+    /*display: flex;*/
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.contenido-columna1-fila1-registro-personal {
+    margin-left: 5px;
+    font-size: 20px;
+    font-weight: 600;
+    /*color: #196F3D;*/
+    /*white-space: pre;*/
+}
+
+.contenido-columna1-fila2-registro-personal {
+    background-color: mintcream;
+    /*margin-left: 15px;*/
+    /*width: 380px;*/
+    margin-bottom: 10px;
+}
+
+.contenido-columna2-fila1-registro-personal {
+    margin-left: 5px;
+    font-size: 20px;
+    font-weight: 600;
+    /*color: #196F3D;*/
+    /*white-space: pre;*/
+}
+
+
+.contenido-columna2-fila2-registro-personal {
+    background-color: mintcream;
+    /*margin-left: 15px;*/
+    /*width: 380px;*/
+    margin-bottom: 10px;
+}
+
+.contenedor-dropdown-registro-personal {
+    width: 100%;
+}
+
+/*departamento-provincia-distrito*/
+.contenido-columna2-fila2-registro-departamentos {    
+    background-color: mintcream;
+    /*margin-left: 15px;*/
+    margin-right: 15px;
+    width: 50%;
+    /*esto de abajo fue sacado de form-control del bootstrap.min.css*/
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-image: none;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    /*margin-bottom:10px;*/
+   
+}
+.contenido-columna2-fila2-registro-provincias {
+    background-color: mintcream;
+    margin-bottom: 10px;
+    /*margin-left: 15px;*/
+    margin-right: 15px;
+    width: 50%;
+    /*esto de abajo fue sacado de form-control del bootstrap.min.css*/
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-image: none;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s
+}
+.contenido-columna2-fila2-registro-distritos {   
+    background-color: mintcream;
+    /*margin-left: 15px;*/
+    margin-right: 15px;
+    width: 50%;
+    /*esto de abajo fue sacado de form-control del bootstrap.min.css*/
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-image: none;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    margin-bottom:10px;
+}
+.contenido-columna2-fila2-registro-tipoperfil {
+    background-color: mintcream;
+    /*margin-left: 15px;*/
+    /*width: 86%;*/
+    margin-bottom:10px;
+}
+
+.volver-select-registro-personal {
+    width: 16%;
+    background-color: red;
+    color: #ffffff;
+}
+
+.contenido-columna1-fila2-registro-fechanacimiento {
+    background-color: mintcream;
+    /*margin-left: 15px;*/
+    /*width: 70%;*/
+    /*padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-image: none;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;*/
+    margin-bottom: 10px;
+    
+}
+
+
+
+
+.contenedor-imagen-perfil-registro {
+    width: 100%;
+    height: 230px;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.mensaje-alerta {
+    /*margin-left:15px;*/
+    width: 65%;
+    font-size: 17px;
+    /*color:forestgreen;*/
+    margin-bottom: 10px;
+}
+
+
+.caja-boton-registro-personal {
+    padding-top: 20px;
+    width: 98%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.boton-regresar-registro-personal, .boton-registrar-registro-personal {
+    float: right;
+    width: 10%;
+    margin-left: 10px;
+}
+
+
+.imagen-personal-registro-personal {
+    margin-top: 28px;
+    margin-bottom:28px;
+}
+
+.titulo-registrar-personal {
+    text-align: center;
+    padding-top: 7px;
+}
+
+
+.swal-footer {
+    background-color: rgb(245, 248, 250);
+    margin-top: 32px;
+    border-top: 1px solid #E9EEF1;
+    overflow: hidden;
+}
+
+
+ 
+
+
+
+
+
+
+
