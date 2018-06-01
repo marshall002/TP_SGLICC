@@ -1,6 +1,0 @@
-C:\Users\Roger\Desktop\Cursos 2016-I\Taller de Gerencia de Proyectos\2018-1\1er Entregable\SGLTCC\DTO\bin\Debug\DTO.dll
-C:\Users\Roger\Desktop\Cursos 2016-I\Taller de Gerencia de Proyectos\2018-1\1er Entregable\SGLTCC\DTO\bin\Debug\DTO.pdb
-C:\Users\Roger\Desktop\Cursos 2016-I\Taller de Gerencia de Proyectos\2018-1\1er Entregable\SGLTCC\DTO\obj\Debug\DTO.csprojResolveAssemblyReference.cache
-C:\Users\Roger\Desktop\Cursos 2016-I\Taller de Gerencia de Proyectos\2018-1\1er Entregable\SGLTCC\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
-C:\Users\Roger\Desktop\Cursos 2016-I\Taller de Gerencia de Proyectos\2018-1\1er Entregable\SGLTCC\DTO\obj\Debug\DTO.dll
-C:\Users\Roger\Desktop\Cursos 2016-I\Taller de Gerencia de Proyectos\2018-1\1er Entregable\SGLTCC\DTO\obj\Debug\DTO.pdb
